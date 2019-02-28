@@ -1,0 +1,14 @@
+{
+  "groups": {
+    "core": {
+      "packages": [
+        "package.json"
+      ]
+    },
+    "example": {
+      "packages": [
+        "example/package.json"
+      ]
+    }
+  }
+}
