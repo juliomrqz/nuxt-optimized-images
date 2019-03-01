@@ -1,0 +1,889 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`nuxt-optimized-images can disable image types 1`] = `
+Object {
+  "oneOf": Array [
+    Object {
+      "resourceQuery": /\\(include\\.\\*original\\|original\\.\\*include\\)/,
+      "use": Array [
+        Object {
+          "loader": "raw-loader",
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /\\(inline\\.\\*original\\|original\\.\\*inline\\)/,
+      "use": Array [
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": undefined,
+            "name": "[path][name].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /\\(url\\.\\*original\\|original\\.\\*url\\)/,
+      "use": Array [
+        Object {
+          "loader": "file-loader",
+          "options": Object {
+            "name": "[path][name].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /url/,
+      "use": Array [
+        Object {
+          "loader": "file-loader",
+          "options": Object {
+            "name": "[path][name].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /inline/,
+      "use": Array [
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": undefined,
+            "name": "[path][name].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /include/,
+      "use": Array [
+        Object {
+          "loader": "raw-loader",
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /original/,
+      "use": Array [
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": 1000,
+            "name": "[path][name].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /lqip\\(&\\|\\$\\)/,
+      "use": Array [
+        Object {
+          "loader": "../lib/loaders/lqip-loader/picture-export-loader.js",
+        },
+        Object {
+          "loader": "lqip-loader",
+          "options": Object {
+            "name": "[path][name].[ext]",
+          },
+        },
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": 1000,
+            "name": "[path][name].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /lqip-colors/,
+      "use": Array [
+        Object {
+          "loader": "../lib/loaders/lqip-loader/colors-export-loader.js",
+          "options": Object {},
+        },
+        Object {
+          "loader": "lqip-loader",
+          "options": Object {
+            "base64": false,
+            "name": "[path][name].[ext]",
+            "palette": true,
+          },
+        },
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": 1000,
+            "name": "[path][name].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /size/,
+      "use": Array [
+        Object {
+          "loader": "responsive-loader",
+          "options": Object {
+            "adapter": [Function],
+            "name": "[path][name]--[width].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "use": Array [
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": 1000,
+            "name": "[path][name].[ext]",
+          },
+        },
+        Object {
+          "loader": "img-loader",
+          "options": Object {
+            "plugins": Array [],
+          },
+        },
+      ],
+    },
+  ],
+  "test": /\\\\\\.\\(jpe\\?g\\)\\$/i,
+}
+`;
+
+exports[`nuxt-optimized-images can optimize all images on production 1`] = `
+Object {
+  "oneOf": Array [
+    Object {
+      "resourceQuery": /\\(include\\.\\*original\\|original\\.\\*include\\)/,
+      "use": Array [
+        Object {
+          "loader": "raw-loader",
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /\\(inline\\.\\*original\\|original\\.\\*inline\\)/,
+      "use": Array [
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": undefined,
+            "name": "img/[hash:7].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /\\(url\\.\\*original\\|original\\.\\*url\\)/,
+      "use": Array [
+        Object {
+          "loader": "file-loader",
+          "options": Object {
+            "name": "img/[hash:7].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /url/,
+      "use": Array [
+        Object {
+          "loader": "file-loader",
+          "options": Object {
+            "name": "img/[hash:7].[ext]",
+          },
+        },
+        Object {
+          "loader": "img-loader",
+          "options": Object {
+            "plugins": Array [
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+            ],
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /inline/,
+      "use": Array [
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": undefined,
+            "name": "img/[hash:7].[ext]",
+          },
+        },
+        Object {
+          "loader": "img-loader",
+          "options": Object {
+            "plugins": Array [
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+            ],
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /include/,
+      "use": Array [
+        Object {
+          "loader": "raw-loader",
+        },
+        Object {
+          "loader": "img-loader",
+          "options": Object {
+            "plugins": Array [
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+            ],
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /original/,
+      "use": Array [
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": 1000,
+            "name": "img/[hash:7].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /lqip\\(&\\|\\$\\)/,
+      "use": Array [
+        Object {
+          "loader": "../lib/loaders/lqip-loader/picture-export-loader.js",
+        },
+        Object {
+          "loader": "lqip-loader",
+          "options": Object {
+            "name": "img/[hash:7].[ext]",
+          },
+        },
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": 1000,
+            "name": "img/[hash:7].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /lqip-colors/,
+      "use": Array [
+        Object {
+          "loader": "../lib/loaders/lqip-loader/colors-export-loader.js",
+          "options": Object {},
+        },
+        Object {
+          "loader": "lqip-loader",
+          "options": Object {
+            "base64": false,
+            "name": "img/[hash:7].[ext]",
+            "palette": true,
+          },
+        },
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": 1000,
+            "name": "img/[hash:7].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /size/,
+      "use": Array [
+        Object {
+          "loader": "responsive-loader",
+          "options": Object {
+            "adapter": [Function],
+            "name": "img/[hash:7]-[width].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /webp/,
+      "use": Array [
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": 1000,
+            "mimetype": "image/webp",
+            "name": "img/[hash:7].webp",
+          },
+        },
+        Object {
+          "loader": "webp-loader",
+          "options": Object {},
+        },
+      ],
+    },
+    Object {
+      "use": Array [
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": 1000,
+            "name": "img/[hash:7].[ext]",
+          },
+        },
+        Object {
+          "loader": "img-loader",
+          "options": Object {
+            "plugins": Array [
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+            ],
+          },
+        },
+      ],
+    },
+  ],
+  "test": /\\\\\\.\\(jpe\\?g\\|png\\|svg\\|gif\\)\\$/i,
+}
+`;
+
+exports[`nuxt-optimized-images can optimize all images on production 2`] = `
+Object {
+  "oneOf": Array [
+    Object {
+      "resourceQuery": /\\(include\\.\\*original\\|original\\.\\*include\\)/,
+      "use": Array [
+        Object {
+          "loader": "raw-loader",
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /\\(inline\\.\\*original\\|original\\.\\*inline\\)/,
+      "use": Array [
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": undefined,
+            "name": "img/[hash:7].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /\\(url\\.\\*original\\|original\\.\\*url\\)/,
+      "use": Array [
+        Object {
+          "loader": "file-loader",
+          "options": Object {
+            "name": "img/[hash:7].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /url/,
+      "use": Array [
+        Object {
+          "loader": "file-loader",
+          "options": Object {
+            "name": "img/[hash:7].[ext]",
+          },
+        },
+        Object {
+          "loader": "webp-loader",
+          "options": Object {},
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /inline/,
+      "use": Array [
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": undefined,
+            "name": "img/[hash:7].[ext]",
+          },
+        },
+        Object {
+          "loader": "webp-loader",
+          "options": Object {},
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /include/,
+      "use": Array [
+        Object {
+          "loader": "raw-loader",
+        },
+        Object {
+          "loader": "webp-loader",
+          "options": Object {},
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /original/,
+      "use": Array [
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": 1000,
+            "name": "img/[hash:7].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /lqip\\(&\\|\\$\\)/,
+      "use": Array [
+        Object {
+          "loader": "../lib/loaders/lqip-loader/picture-export-loader.js",
+        },
+        Object {
+          "loader": "lqip-loader",
+          "options": Object {
+            "name": "img/[hash:7].[ext]",
+          },
+        },
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": 1000,
+            "name": "img/[hash:7].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /lqip-colors/,
+      "use": Array [
+        Object {
+          "loader": "../lib/loaders/lqip-loader/colors-export-loader.js",
+          "options": Object {},
+        },
+        Object {
+          "loader": "lqip-loader",
+          "options": Object {
+            "base64": false,
+            "name": "img/[hash:7].[ext]",
+            "palette": true,
+          },
+        },
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": 1000,
+            "name": "img/[hash:7].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /size/,
+      "use": Array [
+        Object {
+          "loader": "responsive-loader",
+          "options": Object {
+            "adapter": undefined,
+            "name": "img/[hash:7]-[width].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "use": Array [
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": 1000,
+            "name": "img/[hash:7].[ext]",
+          },
+        },
+        Object {
+          "loader": "webp-loader",
+          "options": Object {},
+        },
+      ],
+    },
+  ],
+  "test": /\\\\\\.webp\\$/i,
+}
+`;
+
+exports[`nuxt-optimized-images handles all images by default 1`] = `
+Object {
+  "oneOf": Array [
+    Object {
+      "resourceQuery": /\\(include\\.\\*original\\|original\\.\\*include\\)/,
+      "use": Array [
+        Object {
+          "loader": "raw-loader",
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /\\(inline\\.\\*original\\|original\\.\\*inline\\)/,
+      "use": Array [
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": undefined,
+            "name": "[path][name].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /\\(url\\.\\*original\\|original\\.\\*url\\)/,
+      "use": Array [
+        Object {
+          "loader": "file-loader",
+          "options": Object {
+            "name": "[path][name].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /url/,
+      "use": Array [
+        Object {
+          "loader": "file-loader",
+          "options": Object {
+            "name": "[path][name].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /inline/,
+      "use": Array [
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": undefined,
+            "name": "[path][name].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /include/,
+      "use": Array [
+        Object {
+          "loader": "raw-loader",
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /original/,
+      "use": Array [
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": 1000,
+            "name": "[path][name].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /lqip\\(&\\|\\$\\)/,
+      "use": Array [
+        Object {
+          "loader": "../lib/loaders/lqip-loader/picture-export-loader.js",
+        },
+        Object {
+          "loader": "lqip-loader",
+          "options": Object {
+            "name": "[path][name].[ext]",
+          },
+        },
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": 1000,
+            "name": "[path][name].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /lqip-colors/,
+      "use": Array [
+        Object {
+          "loader": "../lib/loaders/lqip-loader/colors-export-loader.js",
+          "options": Object {},
+        },
+        Object {
+          "loader": "lqip-loader",
+          "options": Object {
+            "base64": false,
+            "name": "[path][name].[ext]",
+            "palette": true,
+          },
+        },
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": 1000,
+            "name": "[path][name].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /size/,
+      "use": Array [
+        Object {
+          "loader": "responsive-loader",
+          "options": Object {
+            "adapter": [Function],
+            "name": "[path][name]--[width].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /webp/,
+      "use": Array [
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": 1000,
+            "mimetype": "image/webp",
+            "name": "[path][name].webp",
+          },
+        },
+        Object {
+          "loader": "webp-loader",
+          "options": Object {},
+        },
+      ],
+    },
+    Object {
+      "use": Array [
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": 1000,
+            "name": "[path][name].[ext]",
+          },
+        },
+        Object {
+          "loader": "img-loader",
+          "options": Object {
+            "plugins": Array [],
+          },
+        },
+      ],
+    },
+  ],
+  "test": /\\\\\\.\\(jpe\\?g\\|png\\|svg\\|gif\\)\\$/i,
+}
+`;
+
+exports[`nuxt-optimized-images handles all images by default 2`] = `
+Object {
+  "oneOf": Array [
+    Object {
+      "resourceQuery": /\\(include\\.\\*original\\|original\\.\\*include\\)/,
+      "use": Array [
+        Object {
+          "loader": "raw-loader",
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /\\(inline\\.\\*original\\|original\\.\\*inline\\)/,
+      "use": Array [
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": undefined,
+            "name": "[path][name].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /\\(url\\.\\*original\\|original\\.\\*url\\)/,
+      "use": Array [
+        Object {
+          "loader": "file-loader",
+          "options": Object {
+            "name": "[path][name].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /url/,
+      "use": Array [
+        Object {
+          "loader": "file-loader",
+          "options": Object {
+            "name": "[path][name].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /inline/,
+      "use": Array [
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": undefined,
+            "name": "[path][name].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /include/,
+      "use": Array [
+        Object {
+          "loader": "raw-loader",
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /original/,
+      "use": Array [
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": 1000,
+            "name": "[path][name].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /lqip\\(&\\|\\$\\)/,
+      "use": Array [
+        Object {
+          "loader": "../lib/loaders/lqip-loader/picture-export-loader.js",
+        },
+        Object {
+          "loader": "lqip-loader",
+          "options": Object {
+            "name": "[path][name].[ext]",
+          },
+        },
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": 1000,
+            "name": "[path][name].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /lqip-colors/,
+      "use": Array [
+        Object {
+          "loader": "../lib/loaders/lqip-loader/colors-export-loader.js",
+          "options": Object {},
+        },
+        Object {
+          "loader": "lqip-loader",
+          "options": Object {
+            "base64": false,
+            "name": "[path][name].[ext]",
+            "palette": true,
+          },
+        },
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": 1000,
+            "name": "[path][name].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /size/,
+      "use": Array [
+        Object {
+          "loader": "responsive-loader",
+          "options": Object {
+            "adapter": undefined,
+            "name": "[path][name]--[width].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "use": Array [
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": 1000,
+            "name": "[path][name].[ext]",
+          },
+        },
+      ],
+    },
+  ],
+  "test": /\\\\\\.webp\\$/i,
+}
+`;
