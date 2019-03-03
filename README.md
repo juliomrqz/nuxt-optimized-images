@@ -42,7 +42,7 @@ npm install @bazzite/nuxt-optimized-images
 or
 
 ```bash 
-yarnd add @bazzite/nuxt-optimized-images
+yarn add @bazzite/nuxt-optimized-images
 ```
 
 Add `@bazzite/nuxt-optimized-images` to modules section of nuxt.config.js:
