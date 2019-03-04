@@ -36,7 +36,7 @@ npm install @bazzite/nuxt-optimized-images
 or
 
 ```bash 
-yarnd add @bazzite/nuxt-optimized-images
+yarn add @bazzite/nuxt-optimized-images
 ```
 
 ::: warning
