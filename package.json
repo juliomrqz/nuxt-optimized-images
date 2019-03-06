@@ -22,7 +22,6 @@
   },
   "homepage": "https://www.bazzite.com/docs/nuxt-optimized-images/?utm_source=npm&utm_medium=readme&utm_campaign=nuxt-optimized-images",
   "dependencies": {
-    "chalk": "^2.4.2",
     "consola": "^2.5.6",
     "imagemin": "^6.1.0",
     "img-loader": "^3.0.1",
