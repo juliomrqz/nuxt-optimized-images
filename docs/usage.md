@@ -90,8 +90,8 @@ For [browsers that don't yet support WebP][caniuse-webp], you can also provide a
 ```vue
 <template>
   <picture>
-    <source :src="require('~/assets/my-image.jpg?webp')" type="image/webp" />
-    <source :src="require('~/assets/my-image.jpg')" type="image/jpeg" />
+    <source :srcset="require('~/assets/my-image.jpg?webp')" type="image/webp" />
+    <source :srcset="require('~/assets/my-image.jpg')" type="image/jpeg" />
     <img :src="require('~/assets/my-image.jpg')" />
   </picture>
 </template>
