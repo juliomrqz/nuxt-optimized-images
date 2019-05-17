@@ -61,6 +61,9 @@ module.exports = {
     linkExactActiveClass: 'is-active'
   },
   optimizedImages: {
-    optimizeImagesInDev: true
+    optimizeImagesInDev: true,
+    sqip: {
+      mode: 4
+    }
   }
 }

@@ -14,6 +14,9 @@
         <NuxtLink to="/lqi-placeholders">LQI placeholders</NuxtLink>
       </li>
       <li>
+        <NuxtLink to="/sqip-placeholders">SQIP placeholders</NuxtLink>
+      </li>
+      <li>
         <NuxtLink to="/responsive">Responsive</NuxtLink>
       </li>
     </ul>

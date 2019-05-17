@@ -43,6 +43,7 @@ There are additional options you can specify as query params when you import the
 * [`?original`](#original): Use the original image and do not optimize it
 * [`?lqip`](#lqip): Generate a low-quality image placeholder
 * [`?lqip-colors`](#lqip-colors): Extract the dominant colors of an image
+* [`?sqip`](#sqip): Generate a low-quality svg-image placeholder
 * [`?resize`](#resize): Resize an image
 
 ::: tip
@@ -229,6 +230,25 @@ The number of colors returned can vary and depends on how many different colors 
 -->
 ```
 
+### ?sqip
+
+::: warning
+Requires the optional package [`sqip-loader`][sqip-loader]
+:::
+
+Another way to generate placeholders is using `sqip-loader`. When using this resource query, a very small **SVG image** gets created.
+
+```vue
+<template>
+  <img :src="require('~/assets/my-image.jpg?sqip')">
+</template>
+
+<!-- 
+ Replaces the src with a tiny svg-image.
+-->
+```
+
+
 ### ?resize
 
 ::: warning
@@ -275,3 +295,4 @@ You can also set global configs in the [`responsive`](#responsive) property (in 
 [responsive-loader]: https://www.npmjs.com/package/responsive-loader
 [jimp]: https://www.npmjs.com/package/jimp
 [sharp]: https://www.npmjs.com/package/sharp
+[sqip-loader]: https://github.com/EmilTholin/sqip-loader

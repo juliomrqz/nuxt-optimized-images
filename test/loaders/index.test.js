@@ -26,6 +26,7 @@ describe('@bazzite/nuxt-optimized-images/loaders', () => {
       webp: 'webp-loader',
       png: 'imagemin-pngquant',
       lqip: 'lqip-loader',
+      sqip: 'sqip-loader',
       responsive: path.resolve(__dirname, '../../node_modules/responsive-loader'),
       responsiveAdapter: 'sharp'
     })

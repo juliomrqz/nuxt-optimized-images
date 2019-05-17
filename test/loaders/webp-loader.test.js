@@ -29,7 +29,7 @@ describe('@bazzite/nuxt-optimized-images/loaders/webp-loader', () => {
 
     expect(rule.test).toBeInstanceOf(RegExp)
     expect(rule.test.test('.webp')).toEqual(true)
-    expect(rule.oneOf).toHaveLength(11)
+    expect(rule.oneOf).toHaveLength(12)
   })
 
   it('generates a resource query for webp conversion', () => {
