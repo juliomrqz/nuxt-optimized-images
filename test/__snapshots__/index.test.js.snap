@@ -7,6 +7,9 @@ Object {
       "resourceQuery": /\\(include\\.\\*original\\|original\\.\\*include\\)/,
       "use": Array [
         Object {
+          "loader": "../lib/loaders/raw-loader/export-loader.js",
+        },
+        Object {
           "loader": "raw-loader",
         },
       ],
@@ -62,6 +65,9 @@ Object {
     Object {
       "resourceQuery": /include/,
       "use": Array [
+        Object {
+          "loader": "../lib/loaders/raw-loader/export-loader.js",
+        },
         Object {
           "loader": "raw-loader",
         },
@@ -169,6 +175,9 @@ Object {
       "resourceQuery": /\\(include\\.\\*original\\|original\\.\\*include\\)/,
       "use": Array [
         Object {
+          "loader": "../lib/loaders/raw-loader/export-loader.js",
+        },
+        Object {
           "loader": "raw-loader",
         },
       ],
@@ -246,6 +255,9 @@ Object {
     Object {
       "resourceQuery": /include/,
       "use": Array [
+        Object {
+          "loader": "../lib/loaders/raw-loader/export-loader.js",
+        },
         Object {
           "loader": "raw-loader",
         },
@@ -387,6 +399,9 @@ Object {
       "resourceQuery": /\\(include\\.\\*original\\|original\\.\\*include\\)/,
       "use": Array [
         Object {
+          "loader": "../lib/loaders/raw-loader/export-loader.js",
+        },
+        Object {
           "loader": "raw-loader",
         },
       ],
@@ -450,6 +465,9 @@ Object {
     Object {
       "resourceQuery": /include/,
       "use": Array [
+        Object {
+          "loader": "../lib/loaders/raw-loader/export-loader.js",
+        },
         Object {
           "loader": "raw-loader",
         },
@@ -559,6 +577,9 @@ Object {
       "resourceQuery": /\\(include\\.\\*original\\|original\\.\\*include\\)/,
       "use": Array [
         Object {
+          "loader": "../lib/loaders/raw-loader/export-loader.js",
+        },
+        Object {
           "loader": "raw-loader",
         },
       ],
@@ -614,6 +635,9 @@ Object {
     Object {
       "resourceQuery": /include/,
       "use": Array [
+        Object {
+          "loader": "../lib/loaders/raw-loader/export-loader.js",
+        },
         Object {
           "loader": "raw-loader",
         },
@@ -739,6 +763,9 @@ Object {
       "resourceQuery": /\\(include\\.\\*original\\|original\\.\\*include\\)/,
       "use": Array [
         Object {
+          "loader": "../lib/loaders/raw-loader/export-loader.js",
+        },
+        Object {
           "loader": "raw-loader",
         },
       ],
@@ -794,6 +821,9 @@ Object {
     Object {
       "resourceQuery": /include/,
       "use": Array [
+        Object {
+          "loader": "../lib/loaders/raw-loader/export-loader.js",
+        },
         Object {
           "loader": "raw-loader",
         },
