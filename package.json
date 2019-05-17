@@ -1,6 +1,6 @@
 {
   "name": "@bazzite/nuxt-optimized-images",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Automatically optimizes images used in Nuxt.js projects (jpeg, png, svg, webp and gif).",
   "main": "lib/index.js",
   "directories": {
