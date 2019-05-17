@@ -82,6 +82,7 @@ The following optimization packages are available and supported:
 | `webp-loader`        | Optimizes WebP images and can convert JPEG/PNG images to WebP on the fly ([WebP resource query](./usage/README.md#webp))                                                                                       | [Link][webp-loader]       |
 | `lqip-loader`        | Generates low quality image placeholders and can extract the dominant colors of an image ([lqip resource query](./usage/README.md#lqip))                                                                       | [Link][lqip-loader]       |
 | `responsive-loader`  | Can resize images on the fly and create multiple versions of it for a `srcset`. **Important**: You need to additionally install either `jimp` (node implementation, slower) or `sharp` (binary, faster) | [Link][responsive-loader] |
+| `sqip-loader`  | Loads images and exports tiny SQIP previews as `image/svg+xml` URL-encoded data | [Link][sqip-loader] |
 
 Example: If you have JPG, PNG, and SVG images in your project, you would then need to run
 
@@ -95,11 +96,11 @@ yarn add imagemin-mozjpeg imagemin-pngquant imagemin-svgo
 
 To install **all** optional packages, run:
 ```sh
-npm install imagemin-mozjpeg imagemin-pngquant imagemin-gifsicle imagemin-svgo  webp-loader lqip-loader responsive-loader jimp
+npm install imagemin-mozjpeg imagemin-pngquant imagemin-gifsicle imagemin-svgo  webp-loader lqip-loader responsive-loader sqip-loader jimp
 
 # or
 
-yarn add imagemin-mozjpeg imagemin-pngquant imagemin-gifsicle imagemin-svgo  webp-loader lqip-loader responsive-loader jimp
+yarn add imagemin-mozjpeg imagemin-pngquant imagemin-gifsicle imagemin-svgo  webp-loader lqip-loader responsive-loader sqip-loader jimp
 ```
 
 :warning: Please note that by default, images are only optimized for **production builds, not development builds**. However, this can get changed with the [`optimizeImagesInDev` config][docs-configuration-optimizeimagesindev].
@@ -142,3 +143,4 @@ Code released under the [MIT License][license-page].
 [webp-loader]: https://www.npmjs.com/package/webp-loader
 [lqip-loader]: https://www.npmjs.com/package/lqip-loader
 [responsive-loader]: https://www.npmjs.com/package/responsive-loader
+[sqip-loader]: https://github.com/EmilTholin/sqip-loader

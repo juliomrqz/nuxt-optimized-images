@@ -146,6 +146,28 @@ Object {
       ],
     },
     Object {
+      "resourceQuery": /sqip\\(&\\|\\$\\)/,
+      "use": Array [
+        Object {
+          "loader": "../lib/loaders/sqip-loader/export-loader.js",
+        },
+        Object {
+          "loader": "sqip-loader",
+          "options": Object {
+            "name": "[path][name].[ext]",
+          },
+        },
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": 1000,
+            "name": "[path][name].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
       "use": Array [
         Object {
           "loader": "url-loader",
@@ -342,6 +364,39 @@ Object {
           "options": Object {
             "adapter": [Function],
             "name": "img/[hash:7]-[width].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /sqip\\(&\\|\\$\\)/,
+      "use": Array [
+        Object {
+          "loader": "../lib/loaders/sqip-loader/export-loader.js",
+        },
+        Object {
+          "loader": "sqip-loader",
+          "options": Object {
+            "name": "img/[hash:7].[ext]",
+          },
+        },
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": 1000,
+            "name": "img/[hash:7].[ext]",
+          },
+        },
+        Object {
+          "loader": "img-loader",
+          "options": Object {
+            "plugins": Array [
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+            ],
           },
         },
       ],
@@ -550,6 +605,32 @@ Object {
       ],
     },
     Object {
+      "resourceQuery": /sqip\\(&\\|\\$\\)/,
+      "use": Array [
+        Object {
+          "loader": "../lib/loaders/sqip-loader/export-loader.js",
+        },
+        Object {
+          "loader": "sqip-loader",
+          "options": Object {
+            "name": "img/[hash:7].[ext]",
+          },
+        },
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": 1000,
+            "name": "img/[hash:7].[ext]",
+          },
+        },
+        Object {
+          "loader": "webp-loader",
+          "options": Object {},
+        },
+      ],
+    },
+    Object {
       "use": Array [
         Object {
           "loader": "url-loader",
@@ -711,6 +792,28 @@ Object {
           "options": Object {
             "adapter": [Function],
             "name": "[path][name]--[width].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /sqip\\(&\\|\\$\\)/,
+      "use": Array [
+        Object {
+          "loader": "../lib/loaders/sqip-loader/export-loader.js",
+        },
+        Object {
+          "loader": "sqip-loader",
+          "options": Object {
+            "name": "[path][name].[ext]",
+          },
+        },
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": 1000,
+            "name": "[path][name].[ext]",
           },
         },
       ],
@@ -897,6 +1000,28 @@ Object {
           "options": Object {
             "adapter": undefined,
             "name": "[path][name]--[width].[ext]",
+          },
+        },
+      ],
+    },
+    Object {
+      "resourceQuery": /sqip\\(&\\|\\$\\)/,
+      "use": Array [
+        Object {
+          "loader": "../lib/loaders/sqip-loader/export-loader.js",
+        },
+        Object {
+          "loader": "sqip-loader",
+          "options": Object {
+            "name": "[path][name].[ext]",
+          },
+        },
+        Object {
+          "loader": "url-loader",
+          "options": Object {
+            "fallback": "file-loader",
+            "limit": 1000,
+            "name": "[path][name].[ext]",
           },
         },
       ],

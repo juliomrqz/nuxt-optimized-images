@@ -6,8 +6,6 @@ published: "2019-03-01T13:35:06.636Z"
 title: "Primeros Pasos"
 ---
 
-<Canonical />
-
 # Imágenes Optimizadas para Nuxt
 
 Optimiza automáticamente las imágenes utilizadas en los proyectos en Nuxt.js (JPEG, PNG, SVG, WebP y GIF).
@@ -85,6 +83,7 @@ Los siguientes paquetes de optimización están disponibles y soportados:
 | `webp-loader`        | Optimiza las imágenes WebP y puede convertir imágenes JPEG/PNG a WebP sobre la marcha ([consulta de recursos WebP](./usage/README.md#webp))                                                                                       | [Enlace][webp-loader]       |
 | `lqip-loader`        | Genera placeholders de baja calidad y puede extraer los colores dominantes de una imagen ([consulta de recursos lqip](./usage/README.md#lqip))                                                                       | [Enlace][lqip-loader]       |
 | `responsive-loader`  | Puede cambiar el tamaño de las imágenes sobre la marcha y crear múltiples versiones para `srcset`. **Importante: Necesitas instalar adicionalmente `jimp` (implementación de node, más lento) o `sharp` (binario, más rápido)** | [Enlace][responsive-loader] |
+| `sqip-loader`  | Carga imágenes y exporta pequeños placeholders como datos codificados por URL del tipo `image/svg+xml` | [Link][sqip-loader] |
 
 Ejemplo: Si tienes imágenes JPG, PNG y SVG en tu proyecto, necesitarás ejecutar
 
@@ -99,11 +98,11 @@ yarn add imagemin-mozjpeg imagemin-pngquant imagemin-svgo
 Para instalar **todos** los paquetes opcionales, ejecuta:
 
 ```bash
-npm install imagemin-mozjpeg imagemin-pngquant imagemin-gifsicle imagemin-svgo  webp-loader lqip-loader responsive-loader jimp
+npm install imagemin-mozjpeg imagemin-pngquant imagemin-gifsicle imagemin-svgo  webp-loader lqip-loader responsive-loader sqip-loader jimp
 
 # o
 
-yarn add imagemin-mozjpeg imagemin-pngquant imagemin-gifsicle imagemin-svgo  webp-loader lqip-loader responsive-loader jimp
+yarn add imagemin-mozjpeg imagemin-pngquant imagemin-gifsicle imagemin-svgo  webp-loader lqip-loader responsive-loader sqip-loader jimp
 ```
 
 ::: warning Advertencia
@@ -123,3 +122,4 @@ Dependiendo de tu configuración de compilación/despliegue, también es posible
 [webp-loader]: https://www.npmjs.com/package/webp-loader
 [lqip-loader]: https://www.npmjs.com/package/lqip-loader
 [responsive-loader]: https://www.npmjs.com/package/responsive-loader
+[sqip-loader]: https://github.com/EmilTholin/sqip-loader
