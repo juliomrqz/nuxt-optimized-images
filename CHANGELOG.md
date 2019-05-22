@@ -9,7 +9,7 @@
 
 ### Features
 
-* support `sqip-loader` ([816a919](https://github.com/bazzite/nuxt-optimized-images/commit/816a919))
+* support `sqip-loader` ([098649](https://github.com/bazzite/nuxt-optimized-images/commit/098649))
 
 
 # 0.1.0 (2019-03-14)
