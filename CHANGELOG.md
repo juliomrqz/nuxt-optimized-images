@@ -1,3 +1,13 @@
+## [0.2.1](https://github.com/bazzite/nuxt-optimized-images/compare/v0.2.0...v0.2.1) (2019-05-24)
+
+
+### Bug Fixes
+
+* **docs:** fix description of the page `/es/docs/contributing` ([1b65df6](https://github.com/bazzite/nuxt-optimized-images/commit/1b65df6))
+* ignore the iteration of the webpack rules without a test attribute ([a73dc56](https://github.com/bazzite/nuxt-optimized-images/commit/a73dc56))
+
+
+
 # [0.2.0](https://github.com/bazzite/nuxt-optimized-images/compare/v0.1.0...v0.2.0) (2019-05-17)
 
 
