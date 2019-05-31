@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^7.6.1",
-    "@commitlint/config-conventional": "^7.6.0",
+    "@commitlint/config-conventional": "^8.0.0",
     "conventional-changelog-cli": "^2.0.21",
     "eslint": "^5.16.0",
     "eslint-config-dev": "^2.0.0",
