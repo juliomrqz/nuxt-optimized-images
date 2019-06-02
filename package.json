@@ -56,7 +56,7 @@
     "sharp": "^0.22.1",
     "sqip-loader": "^0.2.0",
     "upath": "^1.1.2",
-    "webp-loader": "^0.4.0"
+    "webp-loader": "^0.5.0"
   },
   "husky": {
     "hooks": {
