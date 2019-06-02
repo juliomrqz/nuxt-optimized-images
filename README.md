@@ -107,9 +107,10 @@ yarn add imagemin-mozjpeg imagemin-pngquant imagemin-gifsicle imagemin-svgo  web
 
 ## Documentation & Support
 
-- If you want extra details of how to configure and use this project, the **full documentation** is available at [https://www.bazzite.com/docs/nuxt-optimized-images/][docs].
-- For **Bug reports** or **Feature requests**, use the [Issues section][issues].
-- You may also want to **follow the company** supporting this project [on Twitter][twitter].
+- 📄 If you want extra details of how to configure and use this project, the **full documentation** is available at [https://www.bazzite.com/docs/nuxt-optimized-images/][docs].
+- 🐞 For **Bug reports** or **Feature requests**, use the [Issues section][issues].
+- 💬 For questions, go to [https://spectrum.chat/bazzite/open-source][spectrum-chat].
+- 🚀 You may also want to **follow the company** supporting this project [on Twitter][twitter].
 
 ## Professional Support
 
@@ -134,6 +135,7 @@ Code released under the [MIT License][license-page].
 [contact-page]: https://www.bazzite.com/contact?utm_source=github&utm_medium=readme&utm_campaign=nuxt-optimized-images
 [code-of-conduct]: https://www.bazzite.com/open-source/code-of-conduct?utm_source=github&utm_medium=readme&utm_campaign=nuxt-optimized-images
 [license-page]: https://github.com/bazzite/nuxt-optimized-images/blob/develop/LICENSE
+[spectrum-chat]: https://spectrum.chat/bazzite/login?r=https://spectrum.chat/bazzite/open-source
 
 [imagemin-mozjpeg]: https://www.npmjs.com/package/imagemin-mozjpeg
 [imagemin-pngquant]: https://www.npmjs.com/package/imagemin-pngquant
