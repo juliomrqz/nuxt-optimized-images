@@ -1,9 +1,10 @@
 ---
-permalink: /docs/nuxt-optimized-images/configuration/
+title: "Configuration"
 description: "The default options for these optimizers should be enough in most cases, but you can overwrite every available option if you want to"
+permalink: /docs/nuxt-optimized-images/configuration/
 created: "2019-03-01T13:35:06.636Z"
 published: "2019-03-01T13:35:06.636Z"
-title: "Configuration"
+modified: "2019-06-05T12:51:34.314Z"
 ---
 
 # Configuration

@@ -1,9 +1,10 @@
 ---
+title: "Primeros Pasos"
+description: "Optimiza automáticamente las imágenes utilizadas en los proyectos en Nuxt.js (JPEG, PNG, SVG, WebP y GIF)"
 permalink: /docs/nuxt-optimized-images/
 created: "2019-03-01T13:35:06.636Z"
-description: "Optimiza automáticamente las imágenes utilizadas en los proyectos en Nuxt.js (JPEG, PNG, SVG, WebP y GIF)"
 published: "2019-03-01T13:35:06.636Z"
-title: "Primeros Pasos"
+modified: "2019-06-05T12:51:34.314Z"
 ---
 
 # Imágenes Optimizadas para Nuxt

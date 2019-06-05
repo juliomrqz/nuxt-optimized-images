@@ -1,9 +1,10 @@
 ---
+title: "Contributing"
+description: "Steps for easier development and debugging purposes of Nuxt Optimized Images."
 permalink: /docs/nuxt-optimized-images/contributing
 created: "2019-03-01T18:51:10.483Z"
-description: "Steps for easier development and debugging purposes of Nuxt Optimized Images."
 published: "2019-03-01T18:51:10.483Z"
-title: "Contributing"
+modified: "2019-06-05T12:51:34.314Z"
 ---
 
 <Canonical />

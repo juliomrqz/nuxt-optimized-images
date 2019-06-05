@@ -1,9 +1,10 @@
 ---
-permalink: /docs/nuxt-optimized-images/usage/
+title: "Usage"
 description: "You can import or require your images directly in your Vue components for optimizations"
+permalink: /docs/nuxt-optimized-images/usage/
 created: "2019-03-01T13:35:06.636Z"
 published: "2019-03-01T13:35:06.636Z"
-title: "Usage"
+modified: "2019-06-05T12:51:34.314Z"
 sidebarDepth: 3
 ---
 
