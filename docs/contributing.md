@@ -7,8 +7,6 @@ published: "2019-03-01T18:51:10.483Z"
 modified: "2019-06-05T12:51:34.314Z"
 ---
 
-<Canonical />
-
 # Contributing
 
 Please make sure to read this **Contributing Guide** before making a contribution.
