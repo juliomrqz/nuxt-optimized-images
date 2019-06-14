@@ -1,9 +1,10 @@
 ---
-permalink: /docs/nuxt-optimized-images/example/
+title: "Example"
 description: "If the default values are good enough for your use-case, you don't have to specify them to have a shorter and cleaner `nuxt.config.js` file."
+permalink: /docs/nuxt-optimized-images/example/
 created: "2019-03-01T13:35:06.636Z"
 published: "2019-03-01T13:35:06.636Z"
-title: "Example"
+modified: "2019-06-05T12:51:34.314Z"
 ---
 
 # Example

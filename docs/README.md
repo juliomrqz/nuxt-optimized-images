@@ -1,9 +1,10 @@
 ---
+title: "Overview"
+description: "Automatically optimizes images used in Nuxt.js projects (jpeg, png, svg, webp and gif)"
 permalink: /docs/nuxt-optimized-images/
 created: "2019-03-01T13:35:06.636Z"
-description: "Automatically optimizes images used in Nuxt.js projects (jpeg, png, svg, webp and gif)"
 published: "2019-03-01T13:35:06.636Z"
-title: "Overview"
+modified: "2019-06-05T12:51:34.314Z"
 ---
 
 # Nuxt Optimized Images

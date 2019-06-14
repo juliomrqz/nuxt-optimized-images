@@ -1,9 +1,10 @@
 ---
-permalink: /docs/nuxt-optimized-images/license/
+title: "Licencia"
 description: "Licencia para Nuxt Optimized Images"
+permalink: /docs/nuxt-optimized-images/license/
 created: "2019-03-01T13:35:06.636Z"
 published: "2019-03-01T13:35:06.636Z"
-title: "Licencia"
+modified: "2019-06-05T12:51:34.314Z"
 ---
 
 # Licencia
