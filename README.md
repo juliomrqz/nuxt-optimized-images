@@ -125,6 +125,8 @@ Everyone participating in this project is expected to agree to abide by the [Cod
 Code released under the [MIT License][license-page].
 
 
+![](https://ga-beacon.appspot.com/UA-65885578-17/bazzite/nuxt-optimized-images?pixel)
+
 [docs]: https://www.bazzite.com/docs/nuxt-optimized-images/?utm_source=github&utm_medium=readme&utm_campaign=nuxt-optimized-images
 [docs-es]: https://www.bazzite.com/es/docs/nuxt-optimized-images/?utm_source=github&utm_medium=readme&utm_campaign=nuxt-optimized-images
 [docs-configuration]: https://www.bazzite.com/docs/nuxt-optimized-images/configuration/?utm_source=github&utm_medium=readme&utm_campaign=nuxt-optimized-images
