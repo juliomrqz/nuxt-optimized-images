@@ -3,7 +3,6 @@
 [![Travis](https://img.shields.io/travis/bazzite/nuxt-optimized-images.svg)](https://travis-ci.org/bazzite/nuxt-optimized-images)
 [![David](https://img.shields.io/david/peer/bazzite/nuxt-optimized-images.svg)](https://david-dm.org/bazzite/nuxt-optimized-images?type=peer)
 [![David](https://img.shields.io/david/dev/bazzite/nuxt-optimized-images.svg)](https://david-dm.org/bazzite/nuxt-optimized-images?type=dev)
-[![Greenkeeper badge](https://badges.greenkeeper.io/bazzite/nuxt-optimized-images.svg)](https://greenkeeper.io/)
 [![version](https://img.shields.io/npm/v/@bazzite/nuxt-optimized-images.svg)](https://www.npmjs.com/package/@bazzite/nuxt-optimized-images)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/bazzite/nuxt-optimized-images/develop/LICENSE)
 
