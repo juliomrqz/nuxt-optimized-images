@@ -265,7 +265,7 @@ After the `?resize` resource query, you can add any other query of the [`respons
     <img :src="oneSize.src" />
 
     <!-- source set with multiple sizes -->
-    <img :srcset="multipleSizes.srcset" :src="multipleSizes.src" />
+    <img :srcset="multipleSizes.srcSet" :src="multipleSizes.src" />
   </div>
 </template>
 
