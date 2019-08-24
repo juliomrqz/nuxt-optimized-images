@@ -32,7 +32,7 @@
     "@commitlint/cli": "8.1.0",
     "@commitlint/config-conventional": "8.1.0",
     "conventional-changelog-cli": "2.0.23",
-    "eslint": "6.2.1",
+    "eslint": "6.2.2",
     "eslint-config-dev": "2.0.0",
     "eslint-config-standard": "13.0.1",
     "eslint-plugin-import": "2.18.2",
