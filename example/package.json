@@ -12,10 +12,10 @@
   },
   "dependencies": {
     "@nuxtjs/bulma": "1.2.4",
-    "cross-env": "6.0.0",
-    "nuxt": "2.9.2"
+    "cross-env": "6.0.3",
+    "nuxt": "2.10.0"
   },
   "devDependencies": {
-    "nodemon": "1.19.2"
+    "nodemon": "1.19.3"
   }
 }
