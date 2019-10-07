@@ -1127,10 +1127,10 @@
     webpack-node-externals "^1.7.2"
     webpackbar "^4.0.0"
 
-"@nuxtjs/bulma@1.2.4":
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/bulma/-/bulma-1.2.4.tgz#9efe53a3516ed36ed23682fbf20ec4c806d1c42b"
-  integrity sha512-IIaCD2YJx345syPicI3hap1D9dyl17v4YdQ0+8IXyQA+mZPl46vmGa9Goe5ElQZW268B/RmD3mANAnfTCeersg==
+"@nuxtjs/bulma@1.2.5":
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/bulma/-/bulma-1.2.5.tgz#dc8c84170a6776d3bddca62a11b6e33fbe074730"
+  integrity sha512-12nIFy1SXrBBgigaW7Qs7hVJKWe8ODDapJE982ly9iJt5/U4ht2jAoRG7YJn5/FSJUlfqAXIrtfZRc5OtVf3Fw==
   dependencies:
     bulma "^0.7.5"
 
