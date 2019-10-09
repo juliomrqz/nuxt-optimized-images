@@ -11,7 +11,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@nuxtjs/bulma": "1.2.4",
+    "@nuxtjs/bulma": "1.2.5",
     "cross-env": "6.0.3",
     "nuxt": "2.10.0"
   },
