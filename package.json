@@ -40,7 +40,7 @@
     "eslint-plugin-node": "10.0.0",
     "eslint-plugin-promise": "4.2.1",
     "eslint-plugin-standard": "4.0.1",
-    "eslint-plugin-vue": "5.2.3",
+    "eslint-plugin-vue": "6.0.1",
     "husky": "3.0.9",
     "imagemin-gifsicle": "6.0.1",
     "imagemin-mozjpeg": "8.0.0",
