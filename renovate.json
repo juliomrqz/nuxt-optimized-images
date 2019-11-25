@@ -1,5 +1,13 @@
 {
   "extends": [
-    "@nuxtjs"
-  ]
+    "@bazzite"
+  ],
+  "schedule": [
+    "after 10pm every weekday",
+    "before 6am every weekday",
+    "every weekend"
+  ],
+  "lockFileMaintenance": {
+    "enabled": true
+  }
 }
