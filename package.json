@@ -25,7 +25,7 @@
     "consola": "^2.11.0",
     "imagemin": "^7.0.1",
     "img-loader": "^3.0.1",
-    "raw-loader": "^3.1.0",
+    "raw-loader": "^4.0.0",
     "url-loader": "^2.3.0"
   },
   "devDependencies": {
