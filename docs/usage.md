@@ -92,8 +92,8 @@ For [browsers that don't yet support WebP][caniuse-webp], you can also provide a
 ```vue
 <template>
   <picture>
-    <source :srcset="require('~/assets/my-image.jpg?webp')" type="image/webp" />
-    <source :srcset="require('~/assets/my-image.jpg')" type="image/jpeg" />
+    <source :srcSet="require('~/assets/my-image.jpg?webp')" type="image/webp" />
+    <source :srcSet="require('~/assets/my-image.jpg')" type="image/jpeg" />
     <img :src="require('~/assets/my-image.jpg')" />
   </picture>
 </template>
@@ -102,8 +102,8 @@ For [browsers that don't yet support WebP][caniuse-webp], you can also provide a
  Results in:
 
 <picture>
-  <source srcset="/_nuxt/images/d6816ecc.webp" type="image/webp" />
-  <source srcset="/_nuxt/images/5216de42.jpg" type="image/jpeg" />
+  <source srcSet="/_nuxt/images/d6816ecc.webp" type="image/webp" />
+  <source srcSet="/_nuxt/images/5216de42.jpg" type="image/jpeg" />
   <img src="/_nuxt/images/5216de42.jpg" />
 </picture>
 -->
@@ -265,7 +265,7 @@ After the `?resize` resource query, you can add any other query of the [`respons
     <img :src="oneSize.src" />
 
     <!-- source set with multiple sizes -->
-    <img :srcset="multipleSizes.srcSet" :src="multipleSizes.src" />
+    <img :srcSet="multipleSizes.srcSet" :src="multipleSizes.src" />
   </div>
 </template>
 

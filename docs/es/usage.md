@@ -102,8 +102,8 @@ Para [los navegadores que aún no son compatibles con WebP][caniuse-webp], tambi
  Resulta en:
 
 <picture>
-  <source srcset="/_nuxt/images/d6816ecc.webp" type="image/webp" />
-  <source srcset="/_nuxt/images/5216de42.jpg" type="image/jpeg" />
+  <source srcSet="/_nuxt/images/d6816ecc.webp" type="image/webp" />
+  <source srcSet="/_nuxt/images/5216de42.jpg" type="image/jpeg" />
   <img src="/_nuxt/images/5216de42.jpg" />
 </picture>
 -->
@@ -261,7 +261,7 @@ Después de la consulta de recursos `?resize`, puedes añadir cualquier otra con
     <img :src="oneSize.src" />
 
     <!-- juego de orígenes con múltiples tamaños -->
-    <img :srcset="multipleSizes.srcset" :src="multipleSizes.src" />
+    <img :srcSet="multipleSizes.srcSet" :src="multipleSizes.src" />
   </div>
 </template>
 
