@@ -83,7 +83,7 @@ Los siguientes paquetes de optimización están disponibles y soportados:
 | `imagemin-svgo`      | Optimiza las imágenes e iconos SVG                                                                                                                                                                          | [Enlace][imagemin-svgo]     |
 | `webp-loader`        | Optimiza las imágenes WebP y puede convertir imágenes JPEG/PNG a WebP sobre la marcha ([consulta de recursos WebP](./usage/README.md#webp))                                                                                       | [Enlace][webp-loader]       |
 | `lqip-loader`        | Genera placeholders de baja calidad y puede extraer los colores dominantes de una imagen ([consulta de recursos lqip](./usage/README.md#lqip))                                                                       | [Enlace][lqip-loader]       |
-| `responsive-loader`  | Puede cambiar el tamaño de las imágenes sobre la marcha y crear múltiples versiones para `srcset`. **Importante: Necesitas instalar adicionalmente `jimp` (implementación de node, más lento) o `sharp` (binario, más rápido)** | [Enlace][responsive-loader] |
+| `responsive-loader`  | Puede cambiar el tamaño de las imágenes sobre la marcha y crear múltiples versiones para `srcSet`. **Importante: Necesitas instalar adicionalmente `jimp` (implementación de node, más lento) o `sharp` (binario, más rápido)** | [Enlace][responsive-loader] |
 | `sqip-loader`  | Carga imágenes y exporta pequeños placeholders como datos codificados por URL del tipo `image/svg+xml` | [Link][sqip-loader] |
 
 Ejemplo: Si tienes imágenes JPG, PNG y SVG en tu proyecto, necesitarás ejecutar
