@@ -1,21 +1,21 @@
 {
   "name": "@bazzite/nuxt-optimized-images-example",
   "version": "1.0.0",
-  "description": "My well-made Nuxt.js project",
-  "author": "Bazzite &lt;opensource@bazzite.com&gt;",
+  "description": "Nuxt Optimzed Images Example Project",
+  "author": "Bazzite <opensource@bazzite.com>",
   "private": true,
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "cross-env DEBUG=nuxt:* nuxt generate"
   },
   "dependencies": {
     "@nuxtjs/bulma": "1.2.6",
-    "cross-env": "6.0.3",
     "nuxt": "2.10.2"
   },
   "devDependencies": {
-    "nodemon": "2.0.1"
+    "nodemon": "2.0.1",
+    "cross-env": "6.0.3"
   }
 }
