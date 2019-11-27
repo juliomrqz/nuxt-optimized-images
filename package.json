@@ -54,7 +54,7 @@
     "lqip-loader": "2.2.0",
     "responsive-loader": "1.2.0",
     "sharp": "0.23.3",
-    "sqip-loader": "0.2.0",
+    "sqip-loader": "1.0.0",
     "upath": "1.2.0",
     "webp-loader": "0.5.0"
   },
