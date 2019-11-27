@@ -4,7 +4,7 @@ description: "You can import or require your images directly in your Vue compone
 permalink: /docs/nuxt-optimized-images/usage/
 created: "2019-03-01T13:35:06.636Z"
 published: "2019-03-01T13:35:06.636Z"
-modified: "2019-06-05T12:51:34.314Z"
+modified: "2019-11-27T21:34:59.535Z"
 sidebarDepth: 3
 ---
 
