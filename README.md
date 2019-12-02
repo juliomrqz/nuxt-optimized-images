@@ -35,13 +35,13 @@ Image sizes can often get reduced up to 60%, but this is not the only thing `@ba
 
 
 ```bash 
-npm install @bazzite/nuxt-optimized-images
+npm install --save-dev @bazzite/nuxt-optimized-images
 ```
 
 or
 
 ```bash 
-yarn add @bazzite/nuxt-optimized-images
+yarn add --save-dev @bazzite/nuxt-optimized-images
 ```
 
 Add `@bazzite/nuxt-optimized-images` to modules section of nuxt.config.js:
