@@ -15,7 +15,7 @@
     "nuxt": "2.10.2"
   },
   "devDependencies": {
-    "nodemon": "2.0.1",
+    "nodemon": "2.0.2",
     "cross-env": "6.0.3"
   }
 }
