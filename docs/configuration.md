@@ -4,7 +4,7 @@ description: "The default options for these optimizers should be enough in most 
 permalink: /docs/nuxt-optimized-images/configuration/
 created: "2019-03-01T13:35:06.636Z"
 published: "2019-03-01T13:35:06.636Z"
-modified: "2019-06-05T12:51:34.314Z"
+modified: "2019-12-19T00:43:45.138Z"
 ---
 
 # Configuration
@@ -40,7 +40,7 @@ To completely disable image inlining, set this value to `-1`. You will then alwa
 ## imagesName
 
 - Type: `function`
-- Default: `({ isDev }) => isDev ? '[path][name][hash:optimized].[ext]' : 'img/[hash:7].[ext]'`
+- Default: `({ isDev }) => isDev ? '[path][name][hash:optimized].[ext]' : 'img/[contenthash:7].[ext]'`
 
 The filename of the optimized images.
 
@@ -51,7 +51,7 @@ Make sure you keep the `[hash]` fragment so they receive a new filename if the c
 ## responsiveImagesName
 
 - Type: `function`
-- Default: `({ isDev }) => isDev ? '[path][name]--[width][hash:optimized].[ext]' : 'img/[hash:7]-[width].[ext]'`
+- Default: `({ isDev }) => isDev ? '[path][name]--[width][hash:optimized].[ext]' : 'img/[contenthash:7]-[width].[ext]'`
 
 The filename of the responsive images.
 

@@ -4,7 +4,7 @@ description: "Las opciones predeterminadas para estos optimizadores deberían se
 permalink: /docs/nuxt-optimized-images/configuration/
 created: "2019-03-01T13:35:06.636Z"
 published: "2019-03-01T13:35:06.636Z"
-modified: "2019-06-05T12:51:34.314Z"
+modified: "2019-12-19T00:43:45.138Z"
 ---
 
 # Configuración
@@ -40,7 +40,7 @@ Para desactivar completamente el inlineado de la imagen, establece este valor en
 ## imagesName
 
 - Tipo: `function`
-- Por defecto: `({ isDev }) => isDev ? '[path][name][hash:optimized].[ext]' : 'img/[hash:7].[ext]'`
+- Por defecto: `({ isDev }) => isDev ? '[path][name][hash:optimized].[ext]' : 'img/[contenthash:7].[ext]'`
 
 El nombre de archivo de las imágenes optimizadas.
 
@@ -51,7 +51,7 @@ Asegúrate de mantener el fragmento `[hash]` para que reciban un nuevo nombre de
 ## responsiveImagesName
 
 - Tipo: `function`
-- Por defecto: `({ isDev }) => isDev ? '[path][name]--[width][hash:optimized].[ext]' : 'img/[hash:7]-[width].[ext]'`
+- Por defecto: `({ isDev }) => isDev ? '[path][name]--[width][hash:optimized].[ext]' : 'img/[contenthash:7]-[width].[ext]'`
 
 El nombre de archivo de las imágenes responsive.
 

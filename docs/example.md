@@ -4,7 +4,7 @@ description: "If the default values are good enough for your use-case, you don't
 permalink: /docs/nuxt-optimized-images/example/
 created: "2019-03-01T13:35:06.636Z"
 published: "2019-03-01T13:35:06.636Z"
-modified: "2019-06-05T12:51:34.314Z"
+modified: "2019-12-19T00:43:45.138Z"
 ---
 
 # Example
@@ -16,8 +16,8 @@ The options specified here are the **default** values. So if they are good enoug
 {
   optimizedImages: {
     inlineImageLimit: 1000,
-    imagesName: ({ isDev }) => isDev ? '[path][name][hash:optimized].[ext]' : 'img/[hash:7].[ext]',
-    responsiveImagesName: ({ isDev }) => isDev ? '[path][name]--[width][hash:optimized].[ext]' : 'img/[hash:7]-[width].[ext]',
+    imagesName: ({ isDev }) => isDev ? '[path][name][hash:optimized].[ext]' : 'img/[contenthash:7].[ext]',
+    responsiveImagesName: ({ isDev }) => isDev ? '[path][name]--[width][hash:optimized].[ext]' : 'img/[contenthash:7]-[width].[ext]',
     handleImages: ['jpeg', 'png', 'svg', 'webp', 'gif'],
     optimizeImages: true,
     optimizeImagesInDev: false,
