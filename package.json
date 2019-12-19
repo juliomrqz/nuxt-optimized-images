@@ -22,7 +22,7 @@
   },
   "homepage": "https://www.bazzite.com/docs/nuxt-optimized-images/?utm_source=npm&utm_medium=readme&utm_campaign=nuxt-optimized-images",
   "dependencies": {
-    "consola": "^2.11.0",
+    "consola": "^2.11.1",
     "imagemin": "^7.0.1",
     "img-loader": "^3.0.1",
     "raw-loader": "^3.1.0",
@@ -31,7 +31,7 @@
   "devDependencies": {
     "@commitlint/cli": "8.2.0",
     "@commitlint/config-conventional": "8.2.0",
-    "conventional-changelog-cli": "2.0.28",
+    "conventional-changelog-cli": "2.0.31",
     "eslint": "6.7.2",
     "eslint-config-dev": "2.0.0",
     "eslint-config-standard": "14.1.0",
