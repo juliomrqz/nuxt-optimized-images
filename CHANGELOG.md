@@ -1,3 +1,12 @@
+# [0.3.0](https://github.com/bazzite/nuxt-optimized-images/compare/v0.2.2...v0.3.0) (2019-12-19)
+
+
+### Performance Improvements
+
+* use `contenthash` for images name on production ([7ab94c0](https://github.com/bazzite/nuxt-optimized-images/commit/7ab94c06c1d0a092a9c93bcfc4481728017029c3))
+
+
+
 ## [0.2.2](https://github.com/bazzite/nuxt-optimized-images/compare/v0.2.1...v0.2.2) (2019-11-27)
 
 
