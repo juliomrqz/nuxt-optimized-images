@@ -42,7 +42,7 @@
     "eslint-plugin-standard": "4.0.1",
     "eslint-plugin-vue": "6.1.2",
     "husky": "3.1.0",
-    "imagemin-gifsicle": "6.0.1",
+    "imagemin-gifsicle": "7.0.0",
     "imagemin-mozjpeg": "8.0.0",
     "imagemin-pngquant": "8.0.0",
     "imagemin-svgo": "7.0.0",
