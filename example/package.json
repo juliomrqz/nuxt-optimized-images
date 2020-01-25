@@ -16,6 +16,6 @@
   },
   "devDependencies": {
     "nodemon": "2.0.2",
-    "cross-env": "6.0.3"
+    "cross-env": "7.0.0"
   }
 }
