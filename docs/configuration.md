@@ -189,7 +189,7 @@ All other formats (SVG, WEBP and GIF) still work as before with the `img-loader`
 If you don't want the images to be optimized, you can set this value to `false`.
 
 ::: warning
-If you don't have any optimization package installed and this option is set to `true`, no image will get optimized. In this case, a warning gets printted in the console during build to inform you about a possible misconfiguration.
+If you don't have any optimization package installed and this option is set to `true`, no image will get optimized. In this case, a warning gets printed in the console during build to inform you about a possible misconfiguration.
 :::
 
 
