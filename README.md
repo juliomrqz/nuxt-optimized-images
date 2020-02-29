@@ -20,9 +20,9 @@ Image sizes can often get reduced up to 60%, but this is not the only thing `@ba
 
 * **Reduces image size** by optimizing images during build.
 * Improves loading speed by providing **progressive images** (for formats that support it).
-* JPEG/PNG images can be **converted to [`WebP` on the fly](./usage/README.md#webp)** for an even smaller size.
-* Can **[resize](./usage/README.md#resize)** images or generate **low-quality image placeholders** ([lqip](./usage/README.md#lqip)) and extract the dominant [colors](./usage/README.md#lqip-colors) of it.
-* Provides **[query params](./usage/README.md#query-params)** for file-specific handling/settings.
+* JPEG/PNG images can be **converted to [`WebP` on the fly](./docs/usage.md#webp)** for an even smaller size.
+* Can **[resize](./docs/usage.md#resize)** images or generate **low-quality image placeholders** ([lqip](./docs/usage.md#lqip)) and extract the dominant [colors](./docs/usage.md#lqip-colors) of it.
+* Provides **[query params](./docs/usage.md#query-params)** for file-specific handling/settings.
 * And supports these features already included in Nuxt.js:
   * **Content hash** to the file name so images can get cached on CDN level and in the browser for a long time.
   * **Inlined small images** to save HTTP requests and additional roundtrips.
@@ -78,8 +78,8 @@ The following optimization packages are available and supported:
 | `imagemin-optipng`   | Alternative for optimizing PNG images                                                                                                                                                                   | [Link][imagemin-optipng]  |
 | `imagemin-gifsicle`  | Optimizes GIF images                                                                                                                                                                                    | [Link][imagemin-gifsicle] |
 | `imagemin-svgo`      | Optimizes SVG images and icons                                                                                                                                                                          | [Link][imagemin-svgo]     |
-| `webp-loader`        | Optimizes WebP images and can convert JPEG/PNG images to WebP on the fly ([WebP resource query](./usage/README.md#webp))                                                                                       | [Link][webp-loader]       |
-| `lqip-loader`        | Generates low quality image placeholders and can extract the dominant colors of an image ([lqip resource query](./usage/README.md#lqip))                                                                       | [Link][lqip-loader]       |
+| `webp-loader`        | Optimizes WebP images and can convert JPEG/PNG images to WebP on the fly ([WebP resource query](./docs/usage.md#webp))                                                                                       | [Link][webp-loader]       |
+| `lqip-loader`        | Generates low quality image placeholders and can extract the dominant colors of an image ([lqip resource query](./docs/usage.md#lqip))                                                                       | [Link][lqip-loader]       |
 | `responsive-loader`  | Can resize images on the fly and create multiple versions of it for a `srcSet`. **Important**: You need to additionally install either `jimp` (node implementation, slower) or `sharp` (binary, faster) | [Link][responsive-loader] |
 | `sqip-loader`  | Loads images and exports tiny SQIP previews as `image/svg+xml` URL-encoded data | [Link][sqip-loader] |
 
