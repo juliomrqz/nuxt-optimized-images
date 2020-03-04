@@ -197,7 +197,7 @@ o usando [vue-lazyload][vue-lazyload] (un plugin Vue.js para cargar de forma ret
   </div>
 </template>
 
-<style scopped>
+<style scoped>
 img[lazy='loading'] {
   filter: blur(15px);
 }

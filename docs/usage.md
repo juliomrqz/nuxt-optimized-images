@@ -199,7 +199,7 @@ or using [vue-lazyload][vue-lazyload] (a Vue.js plugin for lazyloading your imag
   </div>
 </template>
 
-<style scopped>
+<style scoped>
 img[lazy='loading'] {
   filter: blur(15px);
 }
