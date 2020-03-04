@@ -11,7 +11,7 @@
     "generate": "cross-env DEBUG=nuxt:* nuxt generate"
   },
   "dependencies": {
-    "@nuxtjs/bulma": "1.2.6",
+    "@nuxtjs/bulma": "1.2.7",
     "nuxt": "2.11.0"
   },
   "devDependencies": {
