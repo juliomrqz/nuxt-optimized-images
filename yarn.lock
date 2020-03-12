@@ -2592,10 +2592,10 @@ eslint-plugin-import@2.20.1:
     read-pkg-up "^2.0.0"
     resolve "^1.12.0"
 
-eslint-plugin-jest@23.8.1:
-  version "23.8.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-23.8.1.tgz#247025e8a51b3a25a4cc41166369b0bfb4db83b7"
-  integrity sha512-OycLNqPo/2EfO6kTqnmsu1khz1gTIOxGl3ThIVwL5/oycDF4pm5uNDyvFelNLdpr4COUuM8PVi3963NEG1Efpw==
+eslint-plugin-jest@23.8.2:
+  version "23.8.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-23.8.2.tgz#6f28b41c67ef635f803ebd9e168f6b73858eb8d4"
+  integrity sha512-xwbnvOsotSV27MtAe7s8uGWOori0nUsrXh2f1EnpmXua8sDfY6VZhHAhHg2sqK7HBNycRQExF074XSZ7DvfoFg==
   dependencies:
     "@typescript-eslint/experimental-utils" "^2.5.0"
 
@@ -2621,10 +2621,10 @@ eslint-plugin-standard@4.0.1:
   resolved "https://registry.yarnpkg.com/eslint-plugin-standard/-/eslint-plugin-standard-4.0.1.tgz#ff0519f7ffaff114f76d1bd7c3996eef0f6e20b4"
   integrity sha512-v/KBnfyaOMPmZc/dmc6ozOdWqekGp7bBGq4jLAecEfPGmfKiWS4sA8sC0LqiV9w5qmXAtXVn4M3p1jSyhY85SQ==
 
-eslint-plugin-vue@6.2.1:
-  version "6.2.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-vue/-/eslint-plugin-vue-6.2.1.tgz#ca802df5c33146aed1e56bb21d250c1abb6120a3"
-  integrity sha512-MiIDOotoWseIfLIfGeDzF6sDvHkVvGd2JgkvjyHtN3q4RoxdAXrAMuI3SXTOKatljgacKwpNAYShmcKZa4yZzw==
+eslint-plugin-vue@6.2.2:
+  version "6.2.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-vue/-/eslint-plugin-vue-6.2.2.tgz#27fecd9a3a24789b0f111ecdd540a9e56198e0fe"
+  integrity sha512-Nhc+oVAHm0uz/PkJAWscwIT4ijTrK5fqNqz9QB1D35SbbuMG1uB6Yr5AJpvPSWg+WOw7nYNswerYh0kOk64gqQ==
   dependencies:
     natural-compare "^1.4.0"
     semver "^5.6.0"
@@ -5193,11 +5193,6 @@ mute-stream@0.0.8:
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.8.tgz#1630c42b2251ff81e2a283de96a5497ea92e5e0d"
   integrity sha512-nnbWWOkoWyUsTjKrhgD0dcz22mdkSnpYqbEjIm2nhwhuxlSkpywJmBo8h0ZqJdkp73mb90SssHkN4rsRaBAfAA==
 
-nan@^2.14.0:
-  version "2.14.0"
-  resolved "https://registry.yarnpkg.com/nan/-/nan-2.14.0.tgz#7818f722027b2459a86f0295d434d1fc2336c52c"
-  integrity sha512-INOFj37C7k3AfaNTtX8RhsTw7qRy7eLET14cROi9+5HAVbbHuIWUHEauBv5qT4Av2tWasiTY1Jw6puUNqRJXQg==
-
 nanomatch@^1.2.9:
   version "1.2.13"
   resolved "https://registry.yarnpkg.com/nanomatch/-/nanomatch-1.2.13.tgz#b87a8aa4fc0de8fe6be88895b38983ff265bd119"
@@ -5241,6 +5236,11 @@ node-abi@^2.7.0:
   integrity sha512-FeLpTS0F39U7hHZU1srAK4Vx+5AHNVOTP+hxBNQknR/54laTHSFIJkDWDqiquY1LeLUgTfPN7sLPhMubx0PLAg==
   dependencies:
     semver "^5.4.1"
+
+node-addon-api@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/node-addon-api/-/node-addon-api-2.0.0.tgz#f9afb8d777a91525244b01775ea0ddbe1125483b"
+  integrity sha512-ASCL5U13as7HhOExbT6OlWJJUV/lLzL2voOSP1UVehpRD8FbSrSDjfScK/KwAvVTI5AS6r4VwbOMlIqtvRidnA==
 
 node-int64@^0.4.0:
   version "0.4.0"
@@ -6461,14 +6461,14 @@ set-value@^2.0.0, set-value@^2.0.1:
     is-plain-object "^2.0.3"
     split-string "^3.0.1"
 
-sharp@0.24.1:
-  version "0.24.1"
-  resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.24.1.tgz#f853f9f495dfde05d452179b4f9f31dfc400f4ca"
-  integrity sha512-1Lph6o7D6bU8WrcbG/kT7cVzi2UBi2xrrBfS/WUaD+ZcGd4MZ7+LbtFoGwbMVJH95d5aziBGyExYF4Urm2pjOQ==
+sharp@0.25.1:
+  version "0.25.1"
+  resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.25.1.tgz#7bcc9c0ed0debcf1109913e4b3e901d56e957f07"
+  integrity sha512-CO/16EfYsSPUyW0uHNVhMMR6mqMeMKA5AjVA0/yH2VgYCX+M7jCklzciHGZdOfewDUMVSiu5elFFpkvvhPwgoA==
   dependencies:
     color "^3.1.2"
     detect-libc "^1.0.3"
-    nan "^2.14.0"
+    node-addon-api "^2.0.0"
     npmlog "^4.1.2"
     prebuild-install "^5.3.3"
     semver "^7.1.3"
