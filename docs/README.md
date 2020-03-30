@@ -4,7 +4,7 @@ description: "Automatically optimizes images used in Nuxt.js projects (jpeg, png
 permalink: /docs/nuxt-optimized-images/
 created: "2019-03-01T13:35:06.636Z"
 published: "2019-03-01T13:35:06.636Z"
-modified: "2019-11-27T21:34:59.535Z"
+modified: "2020-03-30T22:52:20Z"
 ---
 
 # Nuxt Optimized Images
@@ -29,25 +29,27 @@ Image sizes can often get reduced up to 60%, but this is not the only thing `@ba
 ## Installation
 
 ```bash 
-npm install @bazzite/nuxt-optimized-images
+npm install --save-dev @bazzite/nuxt-optimized-images
 ```
 
 or
 
 ```bash 
-yarn add @bazzite/nuxt-optimized-images
+yarn add --dev @bazzite/nuxt-optimized-images
 ```
 
 ::: warning
-Node >= 8 and Nuxt.js >= 2 are required.
+Node >= 10 and Nuxt.js >= 2 are required.
 :::
 
 
-Add `@bazzite/nuxt-optimized-images` to modules section of nuxt.config.js:
+Add `@bazzite/nuxt-optimized-images` to `buildModules` section of nuxt.config.js:
+
+:warning: If you are using Nuxt `< 2.9.0`, use `modules` instead. 
 
 ```js
 {
-  modules: [
+  buildModules: [
     '@bazzite/nuxt-optimized-images',
   ],
 
@@ -90,20 +92,20 @@ The following optimization packages are available and supported:
 Example: If you have JPG, PNG, and SVG images in your project, you would then need to run
 
 ```bash
-npm install imagemin-mozjpeg imagemin-pngquant imagemin-svgo
+npm install --save-dev imagemin-mozjpeg imagemin-pngquant imagemin-svgo
 
 # or
 
-yarn add imagemin-mozjpeg imagemin-pngquant imagemin-svgo
+yarn add --dev imagemin-mozjpeg imagemin-pngquant imagemin-svgo
 ```
 
 To install **all** optional packages, run:
 ```bash
-npm install imagemin-mozjpeg imagemin-pngquant imagemin-gifsicle imagemin-svgo  webp-loader lqip-loader responsive-loader sqip-loader jimp
+npm install imagemin-mozjpeg imagemin-pngquant imagemin-gifsicle imagemin-svgo  webp-loader lqip-loader responsive-loader sqip-loader sharp
 
 # or
 
-yarn add imagemin-mozjpeg imagemin-pngquant imagemin-gifsicle imagemin-svgo  webp-loader lqip-loader responsive-loader sqip-loader jimp
+yarn add --dev imagemin-mozjpeg imagemin-pngquant imagemin-gifsicle imagemin-svgo  webp-loader lqip-loader responsive-loader sqip-loader sharp
 ```
 
 ::: warning

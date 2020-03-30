@@ -4,7 +4,7 @@ description: "Optimiza automáticamente las imágenes utilizadas en los proyecto
 permalink: /docs/nuxt-optimized-images/
 created: "2019-03-01T13:35:06.636Z"
 published: "2019-03-01T13:35:06.636Z"
-modified: "2019-11-27T21:34:59.535Z"
+modified: "2020-03-30T22:52:20Z"
 ---
 
 # Imágenes Optimizadas para Nuxt
@@ -29,25 +29,27 @@ El tamaño de las imágenes puede reducirse hasta un 60%, pero esto no es lo ún
 ## Instalación
 
 ```bash 
-npm install @bazzite/nuxt-optimized-images
+npm install --save-dev @bazzite/nuxt-optimized-images
 ```
 
 o
 
 ```bash 
-yarn add @bazzite/nuxt-optimized-images
+yarn add --dev @bazzite/nuxt-optimized-images
 ```
 
 ::: warning Advertencia
-Node >= 8 y Nuxt.js >= 2 son necesarios.
+Node >= 10 y Nuxt.js >= 2 son necesarios.
 :::
 
 
-Añade `@bazzite/nuxt-optimized-images` a la sección de módulos de nuxt.config.js:
+Añade `@bazzite/nuxt-optimized-images` a la sección `buildModules` de nuxt.config.js:
+
+:warning: Si estás usando Nuxt `< 2.9.0`, usa `modules` en su lugar. 
 
 ```js
 {
-  modules: [
+  buildModules: [
     '@bazzite/nuxt-optimized-images',
   ],
 
@@ -89,21 +91,21 @@ Los siguientes paquetes de optimización están disponibles y soportados:
 Ejemplo: Si tienes imágenes JPG, PNG y SVG en tu proyecto, necesitarás ejecutar
 
 ```bash
-npm install imagemin-mozjpeg imagemin-pngquant imagemin-svgo
+npm install --save-dev imagemin-mozjpeg imagemin-pngquant imagemin-svgo
 
 # o
 
-yarn add imagemin-mozjpeg imagemin-pngquant imagemin-svgo
+yarn add --dev imagemin-mozjpeg imagemin-pngquant imagemin-svgo
 ```
 
 Para instalar **todos** los paquetes opcionales, ejecuta:
 
 ```bash
-npm install imagemin-mozjpeg imagemin-pngquant imagemin-gifsicle imagemin-svgo  webp-loader lqip-loader responsive-loader sqip-loader jimp
+npm install --save-dev imagemin-mozjpeg imagemin-pngquant imagemin-gifsicle imagemin-svgo  webp-loader lqip-loader responsive-loader sqip-loader sharp
 
 # o
 
-yarn add imagemin-mozjpeg imagemin-pngquant imagemin-gifsicle imagemin-svgo  webp-loader lqip-loader responsive-loader sqip-loader jimp
+yarn add --dev imagemin-mozjpeg imagemin-pngquant imagemin-gifsicle imagemin-svgo  webp-loader lqip-loader responsive-loader sqip-loader sharp
 ```
 
 ::: warning Advertencia
