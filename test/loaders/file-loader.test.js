@@ -10,9 +10,9 @@ describe('@bazzite/nuxt-optimized-images/loaders/file-loader', () => {
     const optionsOptimizedProd = getFileLoaderOptions(Object.assign({ isDev: false, optimizeInCurrentState: true, optimizeImagesInDev: false }, defaultConfig))
 
     expect(optionsDev.name).toEqual('[path][name].[ext]')
-    expect(optionsProd.name).toEqual('img/[hash:7].[ext]')
+    expect(optionsProd.name).toEqual('img/[contenthash:7].[ext]')
 
     expect(optionsOptimizedDev.name).toEqual('[path][name]--[hash:7].[ext]')
-    expect(optionsOptimizedProd.name).toEqual('img/[hash:7].[ext]')
+    expect(optionsOptimizedProd.name).toEqual('img/[contenthash:7].[ext]')
   })
 })

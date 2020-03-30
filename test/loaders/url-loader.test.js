@@ -8,7 +8,7 @@ describe('@bazzite/nuxt-optimized-images/loaders/url-loader', () => {
 
     expect(options.limit).toEqual(1000)
     expect(options.fallback).toEqual('file-loader')
-    expect(options.name).toEqual('img/[hash:7].[ext]')
+    expect(options.name).toEqual('img/[contenthash:7].[ext]')
   })
 
   it('allows overwriting the inlineImageLimit option', () => {
