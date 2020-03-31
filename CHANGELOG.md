@@ -1,3 +1,23 @@
+# [0.4.0](https://github.com/bazzite/nuxt-optimized-images/compare/v0.3.0...v0.4.0) (2020-03-31)
+
+
+### Bug Fixes
+
+* **docs:** fix links in the Usage page and fix typos ([#159](https://github.com/bazzite/nuxt-optimized-images/issues/159)) ([c33702e](https://github.com/bazzite/nuxt-optimized-images/commit/c33702eed4b6cf53627089317a31043fca3d23aa))
+* **docs:** fix typo ([#146](https://github.com/bazzite/nuxt-optimized-images/issues/146)) ([ff1489c](https://github.com/bazzite/nuxt-optimized-images/commit/ff1489cc3f18614624e845a7c81c0ff4bc7e0c5d))
+* **docs:** update Installation instructions ([ef86870](https://github.com/bazzite/nuxt-optimized-images/commit/ef8687063565d58df362309867ee82ea30be9b33))
+* **tests:** fix tests ([9bdf817](https://github.com/bazzite/nuxt-optimized-images/commit/9bdf8175406ac03cb08c570e5a9f82d0efe28b91))
+
+
+* refactor!: drop support for Node.js 8 ([b747b41](https://github.com/bazzite/nuxt-optimized-images/commit/b747b41d2374b201097883b79a1d3eb074115087))
+
+
+### BREAKING CHANGES
+
+* minimum required Node.js version is 10.x
+
+
+
 # [0.3.0](https://github.com/bazzite/nuxt-optimized-images/compare/v0.2.2...v0.3.0) (2019-12-19)
 
 
