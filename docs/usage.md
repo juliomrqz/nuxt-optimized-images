@@ -4,7 +4,7 @@ description: "You can import or require your images directly in your Vue compone
 permalink: /docs/nuxt-optimized-images/usage/
 created: "2019-03-01T13:35:06.636Z"
 published: "2019-03-01T13:35:06.636Z"
-modified: "2019-11-27T21:34:59.535Z"
+modified: "2020-04-12T16:01:04Z"
 sidebarDepth: 3
 ---
 
@@ -85,7 +85,7 @@ Requires the optional optimization package [`webp-loader`][webp-loader]
 
 WebP is an even better and smaller image format but it is still not that common.
 
-If this `?webp` query parameter is specified, `@bazzite/nuxt-optimized-images` automatically converts a JPEG/PNG image to the new WebP format.
+If this `?webp` query parameter is specified, `@aceforth/nuxt-optimized-images` automatically converts a JPEG/PNG image to the new WebP format.
 
 For [browsers that don't yet support WebP][caniuse-webp], you can also provide a fallback using the `<picture>` tag:
 

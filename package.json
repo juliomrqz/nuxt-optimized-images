@@ -1,5 +1,5 @@
 {
-  "name": "@bazzite/nuxt-optimized-images",
+  "name": "@aceforth/nuxt-optimized-images",
   "version": "0.4.0",
   "description": "Automatically optimizes images used in Nuxt.js projects (jpeg, png, svg, webp and gif).",
   "main": "lib/index.js",
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bazzite/nuxt-optimized-images.git"
+    "url": "git+https://github.com/aceforth/nuxt-optimized-images.git"
   },
-  "author": "Bazzite <opensource@bazzite.com>",
+  "author": "Aceforth <opensource@aceforth.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bazzite/nuxt-optimized-images/issues"
+    "url": "https://github.com/aceforth/nuxt-optimized-images/issues"
   },
-  "homepage": "https://www.bazzite.com/docs/nuxt-optimized-images/?utm_source=npm&utm_medium=readme&utm_campaign=nuxt-optimized-images",
+  "homepage": "https://aceforth.com/docs/nuxt-optimized-images/?utm_source=npm&utm_medium=readme&utm_campaign=nuxt-optimized-images",
   "dependencies": {
     "consola": "^2.11.3",
     "imagemin": "^7.0.1",

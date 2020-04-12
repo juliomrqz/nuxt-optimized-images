@@ -4,7 +4,7 @@ description: "Automatically optimizes images used in Nuxt.js projects (jpeg, png
 permalink: /docs/nuxt-optimized-images/
 created: "2019-03-01T13:35:06.636Z"
 published: "2019-03-01T13:35:06.636Z"
-modified: "2020-03-30T22:52:20Z"
+modified: "2020-04-12T16:01:04Z"
 ---
 
 # Nuxt Optimized Images
@@ -15,7 +15,7 @@ Automatically optimizes images used in Nuxt.js projects (JPEG, PNG, SVG, WebP an
 
 ## Features
 
-Image sizes can often get reduced up to 60%, but this is not the only thing `@bazzite/nuxt-optimized-images` does:
+Image sizes can often get reduced up to 60%, but this is not the only thing `@aceforth/nuxt-optimized-images` does:
 
 * **Reduces image size** by optimizing images during build.
 * Improves loading speed by providing **progressive images** (for formats that support it).
@@ -29,13 +29,13 @@ Image sizes can often get reduced up to 60%, but this is not the only thing `@ba
 ## Installation
 
 ```bash 
-npm install --save-dev @bazzite/nuxt-optimized-images
+npm install --save-dev @aceforth/nuxt-optimized-images
 ```
 
 or
 
 ```bash 
-yarn add --dev @bazzite/nuxt-optimized-images
+yarn add --dev @aceforth/nuxt-optimized-images
 ```
 
 ::: warning
@@ -43,14 +43,14 @@ Node >= 10 and Nuxt.js >= 2 are required.
 :::
 
 
-Add `@bazzite/nuxt-optimized-images` to `buildModules` section of nuxt.config.js:
+Add `@aceforth/nuxt-optimized-images` to `buildModules` section of nuxt.config.js:
 
 :warning: If you are using Nuxt `< 2.9.0`, use `modules` instead. 
 
 ```js
 {
   buildModules: [
-    '@bazzite/nuxt-optimized-images',
+    '@aceforth/nuxt-optimized-images',
   ],
 
   optimizedImages: {
@@ -71,7 +71,7 @@ Please check out the table of all [optional optimization packages](#optimization
 
 ## Optimization Packages
 
-You have to install the optimization packages you need in your project in addition to this module. Then, `@bazzite/nuxt-optimized-images` detects all the supported packages and uses them.
+You have to install the optimization packages you need in your project in addition to this module. Then, `@aceforth/nuxt-optimized-images` detects all the supported packages and uses them.
 
 **So you only have to install these packages with npm, there is no additional step needed after that.**
 

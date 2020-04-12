@@ -4,7 +4,7 @@ description: "License of Nuxt Optimized Images"
 permalink: /docs/nuxt-optimized-images/license/
 created: "2019-03-01T13:35:06.636Z"
 published: "2019-03-01T13:35:06.636Z"
-modified: "2019-06-05T12:51:34.314Z"
+modified: "2020-04-12T16:01:04Z"
 ---
 
 # License
@@ -12,7 +12,7 @@ modified: "2019-06-05T12:51:34.314Z"
 ```
 MIT License
 
-Copyright (c) 2019 Bazzite
+Copyright (c) 2020 Aceforth
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

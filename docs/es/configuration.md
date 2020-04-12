@@ -4,7 +4,7 @@ description: "Las opciones predeterminadas para estos optimizadores deberían se
 permalink: /docs/nuxt-optimized-images/configuration/
 created: "2019-03-01T13:35:06.636Z"
 published: "2019-03-01T13:35:06.636Z"
-modified: "2019-12-19T00:43:45.138Z"
+modified: "2020-04-12T16:01:04Z"
 ---
 
 # Configuración
@@ -18,9 +18,9 @@ Las opciones predeterminadas para estos optimizadores deberían ser suficientes 
 - Tipo: `string[]`
 - Por defecto: `['jpeg', 'png', 'svg', 'webp', 'gif']`
 
-`@bazzite/nuxt-optimized-images` registra el cargador webpack para todos estos tipos de archivos.
+`@aceforth/nuxt-optimized-images` registra el cargador webpack para todos estos tipos de archivos.
 
-Si no quieres que uno de estos sea manejado por `@bazzite/nuxt-optimized-images` porque, por ejemplo, tienes otro plugin o una regla de carga personalizada, simplemente retírela del array.
+Si no quieres que uno de estos sea manejado por `@aceforth/nuxt-optimized-images` porque, por ejemplo, tienes otro plugin o una regla de carga personalizada, simplemente retírela del array.
 
 Ten en cuenta que una imagen que se está manejando no significa que también se optimice automáticamente. El paquete de optimización requerido para esa imagen también tiene que ser instalado. Por favor, lea la sección [paquetes de optimización](./README.md#paquetes-de-optimizacion) para más información.
 
@@ -176,7 +176,7 @@ Por defecto, img-loader maneja la mayoría de las peticiones.
 ::: tip
 Si usas mucho `responsive-loader` y no quieres añadir el parámetro de consulta [`?resize`](./usage/README.md#resize) a cada requerimiento, puedes establecer este valor en `'responsive-loader'`.
 
-Después de eso, `responsive-loader` manejará *todas* las imágenes JPEG y PNG por defecto, incluso sin un parámetro de consulta adicional. Ten en cuenta que no puedes usar ninguno de los [parámetros de consulta que `@bazzite/nuxt-optimized-images`](./usage/README.md)  ofrece en estas imágenes porque la petición se reenvía y no se modifica.
+Después de eso, `responsive-loader` manejará *todas* las imágenes JPEG y PNG por defecto, incluso sin un parámetro de consulta adicional. Ten en cuenta que no puedes usar ninguno de los [parámetros de consulta que `@aceforth/nuxt-optimized-images`](./usage/README.md)  ofrece en estas imágenes porque la petición se reenvía y no se modifica.
 
 Todos los demás formatos (SVG, WEBP y GIF) siguen funcionando como antes con `img-loader` y por lo tanto tienen todos los parámetros de consulta disponibles.
 :::

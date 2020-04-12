@@ -4,7 +4,7 @@ description: "Pasos para facilitar el desarrollo y la depuración de Nuxt Optimi
 permalink: /docs/nuxt-optimized-images/contributing
 created: "2019-03-01T18:51:10.483Z"
 published: "2019-03-01T18:51:10.483Z"
-modified: "2019-06-05T12:51:34.314Z"
+modified: "2020-04-12T16:01:04Z"
 ---
 
 # Contribución
@@ -69,4 +69,4 @@ npm run test
 - Si corriges un error:
   - Proporciona una descripción detallada del error en el PR. Demo en vivo preferido.
 
-[issues-link]: https://github.com/bazzite/nuxt-optimized-images/issues
+[issues-link]: https://github.com/aceforth/nuxt-optimized-images/issues

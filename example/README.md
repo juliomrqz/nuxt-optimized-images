@@ -1,4 +1,4 @@
-# @bazzite/nuxt-optimized-images-example
+# @aceforth/nuxt-optimized-images-example
 
 > My well-made Nuxt.js project
 

@@ -4,7 +4,7 @@ description: "Puedes importar o requerir tus imágenes directamente en los compo
 permalink: /docs/nuxt-optimized-images/usage/
 created: "2019-03-01T13:35:06.636Z"
 published: "2019-03-01T13:35:06.636Z"
-modified: "2019-11-27T21:34:59.535Z"
+modified: "2020-04-12T16:01:04Z"
 sidebarDepth: 3
 ---
 
@@ -85,7 +85,7 @@ Requiere el paquete de optimización opcional [`webp-loader`][webp-loader]
 
 WebP es un formato de imagen mejor y más pequeño, pero todavía no es tan común.
 
-Si se especifica este parámetro de consulta `?webp`, `@bazzite/nuxt-optimized-images` convierte automáticamente una imagen JPEG/PNG al nuevo formato WebP.
+Si se especifica este parámetro de consulta `?webp`, `@aceforth/nuxt-optimized-images` convierte automáticamente una imagen JPEG/PNG al nuevo formato WebP.
 
 Para [los navegadores que aún no son compatibles con WebP][caniuse-webp], también puedes proporcionar una solución alternativa utilizando la etiqueta `<picture>`:
 

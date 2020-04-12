@@ -11,7 +11,7 @@ const { defaultConfig } = require('../../lib/config')
 
 module.exports = () => () => ({ plugin: true })
 
-describe('@bazzite/nuxt-optimized-images/loaders', () => {
+describe('@aceforth/nuxt-optimized-images/loaders', () => {
   it('detects if a module is installed', () => {
     expect(isModuleInstalled('path')).toEqual(true)
     expect(isModuleInstalled('pathalksdfjladksfj')).toEqual(false)

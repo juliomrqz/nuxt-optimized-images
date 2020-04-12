@@ -4,7 +4,7 @@ description: "Steps for easier development and debugging purposes of Nuxt Optimi
 permalink: /docs/nuxt-optimized-images/contributing
 created: "2019-03-01T18:51:10.483Z"
 published: "2019-03-01T18:51:10.483Z"
-modified: "2019-06-05T12:51:34.314Z"
+modified: "2020-04-12T16:01:04Z"
 ---
 
 # Contributing
@@ -70,4 +70,4 @@ npm run test
   - Provide detailed description of the bug in the PR. Live demo preferred.
 
 
-[issues-link]: https://github.com/bazzite/nuxt-optimized-images/issues
+[issues-link]: https://github.com/aceforth/nuxt-optimized-images/issues

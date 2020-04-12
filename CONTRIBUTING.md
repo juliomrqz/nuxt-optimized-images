@@ -4,4 +4,4 @@
 
 Please make sure to read the [Nuxt Optimized Images][link] before making a contribution.
 
-[link]: https://www.bazzite.com/docs/nuxt-optimized-images/contributing?utm_source=github&utm_medium=contributing&utm_campaign=nuxt-optimized-images
+[link]: https://aceforth.com/docs/nuxt-optimized-images/contributing?utm_source=github&utm_medium=contributing&utm_campaign=nuxt-optimized-images

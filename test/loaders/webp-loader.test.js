@@ -5,7 +5,7 @@ const {
   getWebpResourceQuery
 } = require('../../lib/loaders/webp-loader')
 
-describe('@bazzite/nuxt-optimized-images/loaders/webp-loader', () => {
+describe('@aceforth/nuxt-optimized-images/loaders/webp-loader', () => {
   it('uses the default config', () => {
     const config = Object.assign({}, defaultConfig)
     const options = getWebpLoaderOptions(config)

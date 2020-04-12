@@ -1,8 +1,8 @@
 {
-  "name": "@bazzite/nuxt-optimized-images-example",
+  "name": "@aceforth/nuxt-optimized-images-example",
   "version": "1.0.0",
   "description": "Nuxt Optimzed Images Example Project",
-  "author": "Bazzite <opensource@bazzite.com>",
+  "author": "Aceforth <opensource@aceforth.com>",
   "private": true,
   "scripts": {
     "dev": "nuxt",

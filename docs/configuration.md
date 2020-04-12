@@ -4,7 +4,7 @@ description: "The default options for these optimizers should be enough in most 
 permalink: /docs/nuxt-optimized-images/configuration/
 created: "2019-03-01T13:35:06.636Z"
 published: "2019-03-01T13:35:06.636Z"
-modified: "2019-12-19T00:43:45.138Z"
+modified: "2020-04-12T16:01:04Z"
 ---
 
 # Configuration
@@ -18,9 +18,9 @@ The default options for these optimizers should be enough in most cases, but you
 - Type: `string[]`
 - Default: `['jpeg', 'png', 'svg', 'webp', 'gif']`
 
-`@bazzite/nuxt-optimized-images` registers the webpack loader for all these file types.
+`@aceforth/nuxt-optimized-images` registers the webpack loader for all these file types.
 
-If you don't want one of these handled by `@bazzite/nuxt-optimized-images` because you, for example, have another plugin or custom loader rule, simply remove it from the array.
+If you don't want one of these handled by `@aceforth/nuxt-optimized-images` because you, for example, have another plugin or custom loader rule, simply remove it from the array.
 
 Please note that an image being handled does not mean it also gets automatically optimized. The required optimization package for that image also has to be installed. Please read the [optimization packages](./README.md#optimization-packages) section for more information.
 
@@ -176,7 +176,7 @@ By default, img-loader handles most of the requests.
 ::: tip
 If you use the `responsive-loader` a lot and don't want to add the [`?resize`](./usage/README.md#resize) query param to every require, you can set this value to `'responsive-loader'`.
 
-After that, `responsive-loader` will handle *all* JPEG and PNG images per default, even without an additional query param. Just be aware that you can't use any of the [query params `@bazzite/nuxt-optimized-images`](./usage/README.md) provides anymore on these images because the request just gets forwarded and not modified anymore.
+After that, `responsive-loader` will handle *all* JPEG and PNG images per default, even without an additional query param. Just be aware that you can't use any of the [query params `@aceforth/nuxt-optimized-images`](./usage/README.md) provides anymore on these images because the request just gets forwarded and not modified anymore.
 
 All other formats (SVG, WEBP and GIF) still work as before with the `img-loader` and so have all query params available.
 :::
