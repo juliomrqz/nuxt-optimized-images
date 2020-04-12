@@ -1,3 +1,50 @@
+# [1.0.0](https://github.com/aceforth/nuxt-optimized-images/compare/v0.4.0...v1.0.0) (2020-04-12)
+
+
+* refactor!: update parent company ([ad10855](https://github.com/aceforth/nuxt-optimized-images/commit/ad108557cb6880a9a28760750feb8ec51a80ccd5))
+
+
+### BREAKING CHANGES
+
+* **The package has been renamed from `@bazzite/nuxt-optimized-images` to `@aceforth/nuxt-optimized-images`.**
+
+
+
+To upgrade
+
+1. `npm install --save-dev @aceforth/nuxt-optimized-images` 
+
+   or `yarn add --dev @aceforth/nuxt-optimized-images`
+
+2. `npm uninstall @bazzite/nuxt-optimized-images` 
+
+   or `yarn remove @bazzite/nuxt-optimized-images`
+
+3. replace:
+
+```js
+{
+  buildModules: [
+    '@bazzite/nuxt-optimized-images',
+  ],
+}
+```
+
+with
+
+```js
+{
+  buildModules: [
+    '@aceforth/nuxt-optimized-images',
+  ],
+}
+```
+
+
+That’s it, there are no functional changes compared to `@bazzite/nuxt-optimized-images@0.4.0`.
+
+
+
 # [0.4.0](https://github.com/aceforth/nuxt-optimized-images/compare/v0.3.0...v0.4.0) (2020-03-31)
 
 
