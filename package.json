@@ -1,5 +1,5 @@
 {
-  "name": "@aceforth/nuxt-optimized-images",
+  "name": "@mole-inc/nuxt-optimized-images",
   "version": "1.0.0",
   "description": "Automatically optimizes images used in Nuxt.js projects (jpeg, png, svg, webp and gif).",
   "main": "lib/index.js",
@@ -13,14 +13,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aceforth/nuxt-optimized-images.git"
+    "url": "git+https://github.com/mole-inc/nuxt-optimized-images.git"
   },
-  "author": "Aceforth <opensource@aceforth.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/aceforth/nuxt-optimized-images/issues"
+    "url": "https://github.com/mole-inc/nuxt-optimized-images/issues"
   },
-  "homepage": "https://aceforth.com/docs/nuxt-optimized-images/?utm_source=npm&utm_medium=readme&utm_campaign=nuxt-optimized-images",
   "dependencies": {
     "consola": "^2.11.3",
     "imagemin": "^7.0.1",
@@ -29,39 +27,41 @@
     "url-loader": "^4.1.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "8.3.5",
-    "@commitlint/config-conventional": "8.3.4",
-    "conventional-changelog-cli": "2.0.31",
-    "eslint": "6.8.0",
-    "eslint-config-dev": "2.0.0",
-    "eslint-config-standard": "14.1.1",
-    "eslint-plugin-import": "2.20.2",
-    "eslint-plugin-jest": "23.8.2",
-    "eslint-plugin-node": "11.1.0",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "conventional-changelog-cli": "^2.0.31",
+    "eslint": "^6.8.0",
+    "eslint-config-dev": "^2.0.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.8.2",
+    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "4.2.1",
-    "eslint-plugin-standard": "4.0.1",
-    "eslint-plugin-vue": "6.2.2",
-    "husky": "4.2.5",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "husky": "^4.2.5",
     "imagemin-gifsicle": "7.0.0",
-    "imagemin-mozjpeg": "8.0.0",
-    "imagemin-pngquant": "8.0.0",
+    "@mole-inc/imagemin-mozjpeg": "^9.0.0",
+    "@mole-inc/imagemin-pngquant": "^9.0.0",
     "imagemin-svgo": "7.1.0",
-    "jest": "25.3.0",
-    "jimp": "0.10.2",
-    "loader-utils": "2.0.0",
-    "lodash.clonedeepwith": "4.5.0",
-    "lodash.isstring": "4.0.1",
-    "lqip-loader": "2.2.0",
-    "responsive-loader": "1.2.0",
-    "sharp": "0.25.2",
-    "sqip-loader": "1.0.0",
-    "upath": "1.2.0",
-    "webp-loader": "0.6.0"
+    "jest": "^25.3.0",
+    "jimp": "^0.10.2",
+    "loader-utils": "^2.0.0",
+    "lodash.clonedeepwith": "^4.5.0",
+    "lodash.isstring": "^4.0.1",
+    "@mole-inc/lqip-loader": "^4.0.0",
+    "responsive-loader": "^1.2.0",
+    "sharp": "^0.25.2",
+    "sqip-loader": "^1.0.0",
+    "upath": "^1.2.0",
+    "@mole-inc/webp-loader": "^1.0.0"
   },
+	"publishConfig": {
+		"access": "public"
+	},
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "precommit": "lint-staged"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "jest": {

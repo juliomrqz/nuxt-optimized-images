@@ -9,7 +9,6 @@
           <th>Original</th>
           <th>Placeholder</th>
           <th>Placeholder (CSS blur)</th>
-          <th>Dominant Colors</th>
         </tr>
       </thead>
       <tbody>
@@ -34,15 +33,6 @@
               <img :src="image.placeholderBlur" class="blur">
             </figure>
           </td>
-          <td>
-            <div
-              v-for="color in image.colors"
-              :key="color"
-              :style="{ backgroundColor: color }"
-              class="image is-96x96 has-text-white">
-              {{ color }}
-            </div>
-          </td>
         </tr>
       </tbody>
     </table>
@@ -59,13 +49,11 @@ export default {
           original: require("~/assets/images/pexels-photo-841303.jpg?original"),
           placeholder: require("~/assets/images/pexels-photo-841303.jpg?lqip"),
           placeholderBlur: require("~/assets/images/pexels-photo-841303.jpg?lqip"),
-          colors: require("~/assets/images/pexels-photo-841303.jpg?lqip-colors"),
         },
         png: {
           original: require("~/assets/images/pexels-photo-707194.png?original"),
           placeholder: require("~/assets/images/pexels-photo-707194.png?lqip"),
           placeholderBlur: require("~/assets/images/pexels-photo-707194.png?lqip"),
-          colors: require("~/assets/images/pexels-photo-707194.png?lqip-colors"),
         }
       };
     }

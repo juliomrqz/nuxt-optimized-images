@@ -1,22 +1,12 @@
-[![Aceforth Project](https://img.shields.io/badge/Aceforth-project-blue.svg)](https://aceforth.com/docs/nuxt-optimized-images)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/db0e010ec71b462b8732b926e5799cc6)](https://www.codacy.com/app/aceforth/nuxt-optimized-images?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=aceforth/nuxt-optimized-images&amp;utm_campaign=Badge_Grade)
-[![Travis](https://img.shields.io/travis/aceforth/nuxt-optimized-images.svg)](https://travis-ci.org/aceforth/nuxt-optimized-images)
-[![David](https://img.shields.io/david/peer/aceforth/nuxt-optimized-images.svg)](https://david-dm.org/aceforth/nuxt-optimized-images?type=peer)
-[![David](https://img.shields.io/david/dev/aceforth/nuxt-optimized-images.svg)](https://david-dm.org/aceforth/nuxt-optimized-images?type=dev)
-[![version](https://img.shields.io/npm/v/@aceforth/nuxt-optimized-images.svg)](https://www.npmjs.com/package/@aceforth/nuxt-optimized-images)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/aceforth/nuxt-optimized-images/develop/LICENSE)
-
 # :sunrise: :rocket: Nuxt Optimized Images
 
 Automatically optimizes images used in Nuxt.js projects (JPEG, PNG, SVG, WebP and GIF).
 
 > This module is inspired by the work of [Cyril Wanner](https://github.com/cyrilwanner) in [next-optimized-images](https://github.com/cyrilwanner/next-optimized-images).
 
-*Read this in other languages: [English][docs], [Español][docs-es]*
-
 ## Features
 
-Image sizes can often get reduced up to 60%, but this is not the only thing `@aceforth/nuxt-optimized-images` does:
+Image sizes can often get reduced up to 60%, but this is not the only thing `@mole-inc/nuxt-optimized-images` does:
 
 * **Reduces image size** by optimizing images during build.
 * Improves loading speed by providing **progressive images** (for formats that support it).
@@ -35,23 +25,23 @@ Image sizes can often get reduced up to 60%, but this is not the only thing `@ac
 
 
 ```bash 
-npm install --save-dev @aceforth/nuxt-optimized-images
+npm install --save-dev @mole-inc/nuxt-optimized-images
 ```
 
 or
 
 ```bash 
-yarn add --dev @aceforth/nuxt-optimized-images
+yarn add --dev @mole-inc/nuxt-optimized-images
 ```
 
-Add `@aceforth/nuxt-optimized-images` to `buildModules` section of nuxt.config.js:
+Add `@mole-inc/nuxt-optimized-images` to `buildModules` section of nuxt.config.js:
 
 :warning: If you are using Nuxt `< 2.9.0`, use `modules` instead. 
 
 ```js
 {
   buildModules: [
-    '@aceforth/nuxt-optimized-images',
+    '@mole-inc/nuxt-optimized-images',
   ],
 
   optimizedImages: {
@@ -67,7 +57,7 @@ See the [configuration][docs-configuration] section for all available options.
 
 ## Optimization Packages
 
-You have to install the optimization packages you need in your project in addition to this module. Then, `@aceforth/nuxt-optimized-images` detects all the supported packages and uses them.
+You have to install the optimization packages you need in your project in addition to this module. Then, `@mole-inc/nuxt-optimized-images` detects all the supported packages and uses them.
 
 **So you only have to install these packages with npm, there is no additional step needed after that.**
 
@@ -75,51 +65,41 @@ The following optimization packages are available and supported:
 
 | Optimization Package | Description                                                                                                                                                                                             | Project Link              |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
-| `imagemin-mozjpeg`   | Optimizes JPEG images                                                                                                                                                                                   | [Link][imagemin-mozjpeg]  |
-| `imagemin-pngquant`  | Optimizes PNG images                                                                                                                                                                                    | [Link][imagemin-pngquant] |
-| `imagemin-optipng`   | Alternative for optimizing PNG images                                                                                                                                                                   | [Link][imagemin-optipng]  |
+| `@mole-inc/imagemin-mozjpeg`   | Optimizes JPEG images                                                                                                                                                                                   | [Link][imagemin-mozjpeg]  |
+| `@mole-inc/imagemin-pngquant`  | Optimizes PNG images                                                                                                                                                                                    | [Link][imagemin-pngquant] |
+| `@mole-inc/imagemin-optipng`   | Alternative for optimizing PNG images                                                                                                                                                                   | [Link][imagemin-optipng]  |
 | `imagemin-gifsicle`  | Optimizes GIF images                                                                                                                                                                                    | [Link][imagemin-gifsicle] |
 | `imagemin-svgo`      | Optimizes SVG images and icons                                                                                                                                                                          | [Link][imagemin-svgo]     |
-| `webp-loader`        | Optimizes WebP images and can convert JPEG/PNG images to WebP on the fly ([WebP resource query](./docs/usage.md#webp))                                                                                       | [Link][webp-loader]       |
-| `lqip-loader`        | Generates low quality image placeholders and can extract the dominant colors of an image ([lqip resource query](./docs/usage.md#lqip))                                                                       | [Link][lqip-loader]       |
+| `@mole-inc/webp-loader`        | Optimizes WebP images and can convert JPEG/PNG images to WebP on the fly ([WebP resource query](./docs/usage.md#webp))                                                                                       | [Link][webp-loader]       |
+| `@mole-inc/lqip-loader`        | Generates low quality image placeholders of an image ([lqip resource query](./docs/usage.md#lqip))                                                                       | [Link][lqip-loader]       |
 | `responsive-loader`  | Can resize images on the fly and create multiple versions of it for a `srcSet`. **Important**: You need to additionally install either `jimp` (node implementation, slower) or `sharp` (binary, faster) | [Link][responsive-loader] |
 | `sqip-loader`  | Loads images and exports tiny SQIP previews as `image/svg+xml` URL-encoded data | [Link][sqip-loader] |
 
 Example: If you have JPG, PNG, and SVG images in your project, you would then need to run
 
 ```sh
-npm install --save-dev imagemin-mozjpeg imagemin-pngquant imagemin-svgo
+npm install --save-dev @mole-inc/imagemin-mozjpeg @mole-inc/imagemin-pngquant imagemin-svgo
 
 # or
 
-yarn add --dev imagemin-mozjpeg imagemin-pngquant imagemin-svgo
+yarn add --dev @mole-inc/imagemin-mozjpeg @mole-inc/imagemin-pngquant imagemin-svgo
 ```
 
 To install **all** optional packages, run:
 ```sh
-npm install --save-dev imagemin-mozjpeg imagemin-pngquant imagemin-gifsicle imagemin-svgo  webp-loader lqip-loader responsive-loader sqip-loader sharp
+npm install --save-dev @mole-inc/imagemin-mozjpeg @mole-inc/imagemin-pngquant imagemin-gifsicle imagemin-svgo @mole-inc/webp-loader @mole-inc/lqip-loader responsive-loader sqip-loader sharp
 
 # or
 
-yarn add --dev imagemin-mozjpeg imagemin-pngquant imagemin-gifsicle imagemin-svgo  webp-loader lqip-loader responsive-loader sqip-loader sharp
+yarn add --dev @mole-inc/imagemin-mozjpeg @mole-inc/imagemin-pngquant imagemin-gifsicle imagemin-svgo @mole-inc/webp-loader @mole-inc/lqip-loader responsive-loader sqip-loader sharp
 ```
 
 :warning: Please note that by default, images are only optimized for **production builds, not development builds**. However, this can get changed with the [`optimizeImagesInDev` config][docs-configuration-optimizeimagesindev].
 
-## Documentation & Support
+## Documentation
 
 - 📄 If you want extra details of how to configure and use this project, the **full documentation** is available at [https://aceforth.com/docs/nuxt-optimized-images/][docs].
 - 🐞 For **Bug reports** or **Feature requests**, use the [Issues section][issues].
-- 💬 For questions, go to [https://spectrum.chat/bazzite/open-source][spectrum-chat].
-- 🚀 You may also want to **follow the company** supporting this project [on Twitter][twitter].
-
-## Professional Support
-
-This project is sponsored by [Aceforth][aceforth-website]. If you require Professional Assistance on your project(s), please contact us at [https://aceforth.com/contact][contact-page].
-
-## Code of Conduct
-
-Everyone participating in this project is expected to agree to abide by the [Code of Conduct][code-of-conduct].
 
 ## License
 
@@ -128,24 +108,18 @@ Code released under the [MIT License][license-page].
 
 ![](https://ga-beacon.appspot.com/UA-65885578-17/aceforth/nuxt-optimized-images?pixel)
 
-[docs]: https://aceforth.com/docs/nuxt-optimized-images/?utm_source=github&utm_medium=readme&utm_campaign=nuxt-optimized-images
-[docs-es]: https://aceforth.com/es/docs/nuxt-optimized-images/?utm_source=github&utm_medium=readme&utm_campaign=nuxt-optimized-images
-[docs-configuration]: https://aceforth.com/docs/nuxt-optimized-images/configuration/?utm_source=github&utm_medium=readme&utm_campaign=nuxt-optimized-images
-[docs-configuration-optimizeimagesindev]: https://aceforth.com/docs/nuxt-optimized-images/configuration/?utm_source=github&utm_medium=readme&utm_campaign=nuxt-optimized-images#optimizeimagesindev
-[issues]: https://github.com/aceforth/nuxt-optimized-images/issues
-[twitter]: https://twitter.com/AceforthHQ
-[aceforth-website]: https://aceforth.com?utm_source=github&utm_medium=readme&utm_campaign=nuxt-optimized-images
-[contact-page]: https://aceforth.com/contact?utm_source=github&utm_medium=readme&utm_campaign=nuxt-optimized-images
-[code-of-conduct]: https://aceforth.com/open-source/code-of-conduct?utm_source=github&utm_medium=readme&utm_campaign=nuxt-optimized-images
-[license-page]: https://github.com/aceforth/nuxt-optimized-images/blob/develop/LICENSE
-[spectrum-chat]: https://spectrum.chat/bazzite/login?r=https://spectrum.chat/bazzite/open-source
+[docs]:  https://mole-inc.github.io/nuxt-optimized-images/?utm_source=github&utm_medium=readme&utm_campaign=nuxt-optimized-images
+[docs-configuration]: https://mole-inc.github.io/nuxt-optimized-images/configuration/
+[docs-configuration-optimizeimagesindev]: https://mole-inc.github.io/nuxt-optimized-images/configuration/?utm_source=github&utm_medium=readme&utm_campaign=nuxt-optimized-images#optimizeimagesindev
+[issues]: https://github.com/mole-inc/nuxt-optimized-images/issues
+[license-page]: https://github.com/mole-inc/nuxt-optimized-images/blob/master/LICENSE
 
-[imagemin-mozjpeg]: https://www.npmjs.com/package/imagemin-mozjpeg
-[imagemin-pngquant]: https://www.npmjs.com/package/imagemin-pngquant
-[imagemin-optipng]: https://www.npmjs.com/package/imagemin-optipng
+[imagemin-mozjpeg]: https://www.npmjs.com/package/@mole-inc/imagemin-mozjpeg
+[imagemin-pngquant]: https://www.npmjs.com/package/@mole-inc/imagemin-pngquant
+[imagemin-optipng]: https://www.npmjs.com/package/@mole-inc/imagemin-optipng
 [imagemin-gifsicle]: https://www.npmjs.com/package/imagemin-gifsicle
 [imagemin-svgo]: https://www.npmjs.com/package/imagemin-svgo
-[webp-loader]: https://www.npmjs.com/package/webp-loader
-[lqip-loader]: https://www.npmjs.com/package/lqip-loader
+[webp-loader]: https://www.npmjs.com/package/@mole-inc/webp-loader
+[lqip-loader]: https://www.npmjs.com/package/@mole-inc/lqip-loader
 [responsive-loader]: https://www.npmjs.com/package/responsive-loader
-[sqip-loader]: https://github.com/EmilTholin/sqip-loader
+[sqip-loader]: https://www.npmjs.com/package/sqip-loader

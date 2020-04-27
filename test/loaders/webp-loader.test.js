@@ -5,7 +5,7 @@ const {
   getWebpResourceQuery
 } = require('../../lib/loaders/webp-loader')
 
-describe('@aceforth/nuxt-optimized-images/loaders/webp-loader', () => {
+describe('@mole-inc/nuxt-optimized-images/loaders/webp-loader', () => {
   it('uses the default config', () => {
     const config = Object.assign({}, defaultConfig)
     const options = getWebpLoaderOptions(config)
@@ -29,7 +29,7 @@ describe('@aceforth/nuxt-optimized-images/loaders/webp-loader', () => {
 
     expect(rule.test).toBeInstanceOf(RegExp)
     expect(rule.test.test('.webp')).toEqual(true)
-    expect(rule.oneOf).toHaveLength(12)
+    expect(rule.oneOf).toHaveLength(11)
   })
 
   it('generates a resource query for webp conversion', () => {
@@ -39,6 +39,6 @@ describe('@aceforth/nuxt-optimized-images/loaders/webp-loader', () => {
     expect(options.resourceQuery.test('img.jpg?webp')).toEqual(true)
     expect(options.use).toHaveLength(2)
     expect(options.use[0].loader).toEqual('url-loader')
-    expect(options.use[1].loader).toEqual('webp-loader')
+    expect(options.use[1].loader).toEqual('@mole-inc/webp-loader')
   })
 })

@@ -1,7 +1,7 @@
 const { defaultConfig } = require('../../lib/config')
 const { getUrlLoaderOptions } = require('../../lib/loaders/url-loader')
 
-describe('@aceforth/nuxt-optimized-images/loaders/url-loader', () => {
+describe('@mole-inc/nuxt-optimized-images/loaders/url-loader', () => {
   it('uses the default config', () => {
     const config = Object.assign({}, defaultConfig)
     const options = getUrlLoaderOptions(config)
