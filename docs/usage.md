@@ -1,7 +1,7 @@
 ---
 title: "Usage"
 description: "You can import or require your images directly in your Vue components for optimizations"
-permalink: /docs/nuxt-optimized-images/usage/
+permalink: /usage/
 created: "2019-03-01T13:35:06.636Z"
 published: "2019-03-01T13:35:06.636Z"
 modified: "2020-04-12T16:01:04Z"
@@ -43,7 +43,6 @@ There are additional options you can specify as query params when you import the
 * [`?url`](#url): Force an URL for a small image (instead of `data-uri`)
 * [`?original`](#original): Use the original image and do not optimize it
 * [`?lqip`](#lqip): Generate a low-quality image placeholder
-* [`?lqip-colors`](#lqip-colors): Extract the dominant colors of an image
 * [`?sqip`](#sqip): Generate a low-quality svg-image placeholder
 * [`?resize`](#resize): Resize an image
 
@@ -85,7 +84,7 @@ Requires the optional optimization package [`webp-loader`][webp-loader]
 
 WebP is an even better and smaller image format but it is still not that common.
 
-If this `?webp` query parameter is specified, `@aceforth/nuxt-optimized-images` automatically converts a JPEG/PNG image to the new WebP format.
+If this `?webp` query parameter is specified, `@mole-inc/nuxt-optimized-images` automatically converts a JPEG/PNG image to the new WebP format.
 
 For [browsers that don't yet support WebP][caniuse-webp], you can also provide a fallback using the `<picture>` tag:
 
@@ -169,7 +168,7 @@ This can also be combined with the `?url` or `?inline` resource query (e.g. `?or
 ### ?lqip
 
 ::: warning
-Requires the optional package [`lqip-loader`][lqip-loader]
+Requires the optional package [`@mole-inc/lqip-loader`][lqip-loader]
 :::
 
 When using this resource query, a very small (about `10x7 pixels`) image gets created. You can then display this image as a placeholder until the real (big) image has loaded.
@@ -206,30 +205,6 @@ img[lazy='loading'] {
 </style>
 ```
 
-### ?lqip-colors
-
-::: warning
-Requires the optional package [`lqip-loader`][lqip-loader]
-:::
-
-This resource query returns you an **array with hex values** of the dominant colors of an image. You can also use this as a placeholder until the real image has loaded (e.g. as a background) as the *Google Picture Search* does.
-
-The number of colors returned can vary and depends on how many different colors your image has.
-
-
-```vue
-<template>
-  <div :style="{ backgroundColor: require('~/assets/my-image.jpg?lqip-colors')[0] }" />
-</template>
-
-<!-- 
- * require('~/assets/my-image.jpg?lqip-colors')
- *
- * returns for example
- *
- * ['#0e648d', '#5f94b5', '#a7bbcb', '#223240', '#a4c3dc', '#1b6c9c']
--->
-```
 
 ### ?sqip
 
@@ -291,8 +266,8 @@ You can also set global configs in the [`responsive`](#responsive) property (in 
 
 [caniuse-webp]: https://caniuse.com/#feat=webp
 [vue-lazyload]: https://github.com/hilongjw/vue-lazyload
-[webp-loader]: https://www.npmjs.com/package/webp-loader
-[lqip-loader]: https://www.npmjs.com/package/lqip-loader
+[webp-loader]: https://www.npmjs.com/package/@mole-inc/webp-loader
+[lqip-loader]: https://www.npmjs.com/package/@mole-inc/lqip-loader
 [responsive-loader]: https://www.npmjs.com/package/responsive-loader
 [jimp]: https://www.npmjs.com/package/jimp
 [sharp]: https://www.npmjs.com/package/sharp

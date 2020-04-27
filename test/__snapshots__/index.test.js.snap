@@ -93,34 +93,9 @@ Object {
           "loader": "../lib/loaders/lqip-loader/picture-export-loader.js",
         },
         Object {
-          "loader": "lqip-loader",
+          "loader": "@mole-inc/lqip-loader",
           "options": Object {
             "name": "[path][name].[ext]",
-          },
-        },
-        Object {
-          "loader": "url-loader",
-          "options": Object {
-            "fallback": "file-loader",
-            "limit": 1000,
-            "name": "[path][name].[ext]",
-          },
-        },
-      ],
-    },
-    Object {
-      "resourceQuery": /lqip-colors/,
-      "use": Array [
-        Object {
-          "loader": "../lib/loaders/lqip-loader/colors-export-loader.js",
-          "options": Object {},
-        },
-        Object {
-          "loader": "lqip-loader",
-          "options": Object {
-            "base64": false,
-            "name": "[path][name].[ext]",
-            "palette": true,
           },
         },
         Object {
@@ -316,34 +291,9 @@ Object {
           "loader": "../lib/loaders/lqip-loader/picture-export-loader.js",
         },
         Object {
-          "loader": "lqip-loader",
+          "loader": "@mole-inc/lqip-loader",
           "options": Object {
             "name": "img/[contenthash:7].[ext]",
-          },
-        },
-        Object {
-          "loader": "url-loader",
-          "options": Object {
-            "fallback": "file-loader",
-            "limit": 1000,
-            "name": "img/[contenthash:7].[ext]",
-          },
-        },
-      ],
-    },
-    Object {
-      "resourceQuery": /lqip-colors/,
-      "use": Array [
-        Object {
-          "loader": "../lib/loaders/lqip-loader/colors-export-loader.js",
-          "options": Object {},
-        },
-        Object {
-          "loader": "lqip-loader",
-          "options": Object {
-            "base64": false,
-            "name": "img/[contenthash:7].[ext]",
-            "palette": true,
           },
         },
         Object {
@@ -414,7 +364,7 @@ Object {
           },
         },
         Object {
-          "loader": "webp-loader",
+          "loader": "@mole-inc/webp-loader",
           "options": Object {},
         },
       ],
@@ -495,7 +445,7 @@ Object {
           },
         },
         Object {
-          "loader": "webp-loader",
+          "loader": "@mole-inc/webp-loader",
           "options": Object {},
         },
       ],
@@ -512,7 +462,7 @@ Object {
           },
         },
         Object {
-          "loader": "webp-loader",
+          "loader": "@mole-inc/webp-loader",
           "options": Object {},
         },
       ],
@@ -527,7 +477,7 @@ Object {
           "loader": "raw-loader",
         },
         Object {
-          "loader": "webp-loader",
+          "loader": "@mole-inc/webp-loader",
           "options": Object {},
         },
       ],
@@ -552,34 +502,9 @@ Object {
           "loader": "../lib/loaders/lqip-loader/picture-export-loader.js",
         },
         Object {
-          "loader": "lqip-loader",
+          "loader": "@mole-inc/lqip-loader",
           "options": Object {
             "name": "img/[contenthash:7].[ext]",
-          },
-        },
-        Object {
-          "loader": "url-loader",
-          "options": Object {
-            "fallback": "file-loader",
-            "limit": 1000,
-            "name": "img/[contenthash:7].[ext]",
-          },
-        },
-      ],
-    },
-    Object {
-      "resourceQuery": /lqip-colors/,
-      "use": Array [
-        Object {
-          "loader": "../lib/loaders/lqip-loader/colors-export-loader.js",
-          "options": Object {},
-        },
-        Object {
-          "loader": "lqip-loader",
-          "options": Object {
-            "base64": false,
-            "name": "img/[contenthash:7].[ext]",
-            "palette": true,
           },
         },
         Object {
@@ -625,7 +550,7 @@ Object {
           },
         },
         Object {
-          "loader": "webp-loader",
+          "loader": "@mole-inc/webp-loader",
           "options": Object {},
         },
       ],
@@ -641,7 +566,7 @@ Object {
           },
         },
         Object {
-          "loader": "webp-loader",
+          "loader": "@mole-inc/webp-loader",
           "options": Object {},
         },
       ],
@@ -744,34 +669,9 @@ Object {
           "loader": "../lib/loaders/lqip-loader/picture-export-loader.js",
         },
         Object {
-          "loader": "lqip-loader",
+          "loader": "@mole-inc/lqip-loader",
           "options": Object {
             "name": "[path][name].[ext]",
-          },
-        },
-        Object {
-          "loader": "url-loader",
-          "options": Object {
-            "fallback": "file-loader",
-            "limit": 1000,
-            "name": "[path][name].[ext]",
-          },
-        },
-      ],
-    },
-    Object {
-      "resourceQuery": /lqip-colors/,
-      "use": Array [
-        Object {
-          "loader": "../lib/loaders/lqip-loader/colors-export-loader.js",
-          "options": Object {},
-        },
-        Object {
-          "loader": "lqip-loader",
-          "options": Object {
-            "base64": false,
-            "name": "[path][name].[ext]",
-            "palette": true,
           },
         },
         Object {
@@ -831,7 +731,7 @@ Object {
           },
         },
         Object {
-          "loader": "webp-loader",
+          "loader": "@mole-inc/webp-loader",
           "options": Object {},
         },
       ],
@@ -952,34 +852,9 @@ Object {
           "loader": "../lib/loaders/lqip-loader/picture-export-loader.js",
         },
         Object {
-          "loader": "lqip-loader",
+          "loader": "@mole-inc/lqip-loader",
           "options": Object {
             "name": "[path][name].[ext]",
-          },
-        },
-        Object {
-          "loader": "url-loader",
-          "options": Object {
-            "fallback": "file-loader",
-            "limit": 1000,
-            "name": "[path][name].[ext]",
-          },
-        },
-      ],
-    },
-    Object {
-      "resourceQuery": /lqip-colors/,
-      "use": Array [
-        Object {
-          "loader": "../lib/loaders/lqip-loader/colors-export-loader.js",
-          "options": Object {},
-        },
-        Object {
-          "loader": "lqip-loader",
-          "options": Object {
-            "base64": false,
-            "name": "[path][name].[ext]",
-            "palette": true,
           },
         },
         Object {

@@ -11,7 +11,7 @@ const { defaultConfig } = require('../../lib/config')
 
 module.exports = () => () => ({ plugin: true })
 
-describe('@aceforth/nuxt-optimized-images/loaders', () => {
+describe('@mole-inc/nuxt-optimized-images/loaders', () => {
   it('detects if a module is installed', () => {
     expect(isModuleInstalled('path')).toEqual(true)
     expect(isModuleInstalled('pathalksdfjladksfj')).toEqual(false)
@@ -20,12 +20,12 @@ describe('@aceforth/nuxt-optimized-images/loaders', () => {
 
   it('detects installed loaders', () => {
     expect(detectLoaders()).toEqual({
-      jpeg: 'imagemin-mozjpeg',
+      jpeg: '@mole-inc/imagemin-mozjpeg',
       gif: 'imagemin-gifsicle',
       svg: 'imagemin-svgo',
-      webp: 'webp-loader',
-      png: 'imagemin-pngquant',
-      lqip: 'lqip-loader',
+      webp: '@mole-inc/webp-loader',
+      png: '@mole-inc/imagemin-pngquant',
+      lqip: '@mole-inc/lqip-loader',
       sqip: 'sqip-loader',
       responsive: path.resolve(__dirname, '../../node_modules/responsive-loader'),
       responsiveAdapter: 'sharp'

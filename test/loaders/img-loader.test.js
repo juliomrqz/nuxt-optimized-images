@@ -8,7 +8,7 @@ const { defaultConfig } = require('../../lib/config')
 
 module.exports = () => () => ({ plugin: true })
 
-describe('@aceforth/nuxt-optimized-images/loaders/img-loader', () => {
+describe('@mole-inc/nuxt-optimized-images/loaders/img-loader', () => {
   it('adds the correct plugins', () => {
     const plugins1 = getImgLoaderOptions({}, { png: __filename }, true)
     const plugins2 = getImgLoaderOptions({}, { png: __filename }, false)
@@ -80,6 +80,6 @@ describe('@aceforth/nuxt-optimized-images/loaders/img-loader', () => {
     const rule = webpackConfig.module.rules[0]
 
     expect(rule.test).toBeInstanceOf(RegExp)
-    expect(rule.oneOf).toHaveLength(12)
+    expect(rule.oneOf).toHaveLength(11)
   })
 })

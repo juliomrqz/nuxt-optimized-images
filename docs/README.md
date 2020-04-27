@@ -15,7 +15,7 @@ Automatically optimizes images used in Nuxt.js projects (JPEG, PNG, SVG, WebP an
 
 ## Features
 
-Image sizes can often get reduced up to 60%, but this is not the only thing `@aceforth/nuxt-optimized-images` does:
+Image sizes can often get reduced up to 60%, but this is not the only thing `@mole-inc/nuxt-optimized-images` does:
 
 * **Reduces image size** by optimizing images during build.
 * Improves loading speed by providing **progressive images** (for formats that support it).
@@ -24,18 +24,18 @@ Image sizes can often get reduced up to 60%, but this is not the only thing `@ac
 * Same image URLs over multiple builds for long time caching.
 * Provides **[query params](./usage/README.md#query-params)** for file-specific handling/settings.
 * JPEG/PNG images can be **converted to [`WebP` on the fly](./usage/README.md#webp)** for an even smaller size.
-* Can **[resize](./usage/README.md#resize)** images or generate **low-quality image placeholders** ([lqip](./usage/README.md#lqip)) and extract the dominant [colors](./usage/README.md#lqip-colors) of it.
+* Can **[resize](./usage/README.md#resize)** images or generate **low-quality image placeholders** ([lqip](./usage/README.md#lqip)).
 
 ## Installation
 
 ```bash 
-npm install --save-dev @aceforth/nuxt-optimized-images
+npm install --save-dev @mole-inc/nuxt-optimized-images
 ```
 
 or
 
 ```bash 
-yarn add --dev @aceforth/nuxt-optimized-images
+yarn add --dev @mole-inc/nuxt-optimized-images
 ```
 
 ::: warning
@@ -43,14 +43,14 @@ Node >= 10 and Nuxt.js >= 2 are required.
 :::
 
 
-Add `@aceforth/nuxt-optimized-images` to `buildModules` section of nuxt.config.js:
+Add `@mole-inc/nuxt-optimized-images` to `buildModules` section of nuxt.config.js:
 
 :warning: If you are using Nuxt `< 2.9.0`, use `modules` instead. 
 
 ```js
 {
   buildModules: [
-    '@aceforth/nuxt-optimized-images',
+    '@mole-inc/nuxt-optimized-images',
   ],
 
   optimizedImages: {
@@ -71,7 +71,7 @@ Please check out the table of all [optional optimization packages](#optimization
 
 ## Optimization Packages
 
-You have to install the optimization packages you need in your project in addition to this module. Then, `@aceforth/nuxt-optimized-images` detects all the supported packages and uses them.
+You have to install the optimization packages you need in your project in addition to this module. Then, `@mole-inc/nuxt-optimized-images` detects all the supported packages and uses them.
 
 **So you only have to install these packages with npm, there is no additional step needed after that.**
 
@@ -79,33 +79,33 @@ The following optimization packages are available and supported:
 
 | Optimization Package | Description                                                                                                                                                                                             | Project Link              |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
-| `imagemin-mozjpeg`   | Optimizes JPEG images                                                                                                                                                                                   | [Link][imagemin-mozjpeg]  |
-| `imagemin-pngquant`  | Optimizes PNG images                                                                                                                                                                                    | [Link][imagemin-pngquant] |
-| `imagemin-optipng`   | Alternative for optimizing PNG images                                                                                                                                                                   | [Link][imagemin-optipng]  |
+| `@mole-inc/imagemin-mozjpeg`   | Optimizes JPEG images                                                                                                                                                                                   | [Link][imagemin-mozjpeg]  |
+| `@mole-inc/imagemin-pngquant`  | Optimizes PNG images                                                                                                                                                                                    | [Link][imagemin-pngquant] |
+| `@mole-inc/imagemin-optipng`   | Alternative for optimizing PNG images                                                                                                                                                                   | [Link][imagemin-optipng]  |
 | `imagemin-gifsicle`  | Optimizes GIF images                                                                                                                                                                                    | [Link][imagemin-gifsicle] |
 | `imagemin-svgo`      | Optimizes SVG images and icons                                                                                                                                                                          | [Link][imagemin-svgo]     |
-| `webp-loader`        | Optimizes WebP images and can convert JPEG/PNG images to WebP on the fly ([WebP resource query](./usage/README.md#webp))                                                                                       | [Link][webp-loader]       |
-| `lqip-loader`        | Generates low quality image placeholders and can extract the dominant colors of an image ([lqip resource query](./usage/README.md#lqip))                                                                       | [Link][lqip-loader]       |
+| `@mole-inc/webp-loader`        | Optimizes WebP images and can convert JPEG/PNG images to WebP on the fly ([WebP resource query](./docs/usage.md#webp))                                                                                       | [Link][webp-loader]       |
+| `@mole-inc/lqip-loader`        | Generates low quality image placeholders of an image ([lqip resource query](./docs/usage.md#lqip))                                                                       | [Link][lqip-loader]       |
 | `responsive-loader`  | Can resize images on the fly and create multiple versions of it for a `srcSet`. **Important**: You need to additionally install either `jimp` (node implementation, slower) or `sharp` (binary, faster) | [Link][responsive-loader] |
 | `sqip-loader`  | Loads images and exports tiny SQIP previews as `image/svg+xml` URL-encoded data | [Link][sqip-loader] |
 
 Example: If you have JPG, PNG, and SVG images in your project, you would then need to run
 
-```bash
-npm install --save-dev imagemin-mozjpeg imagemin-pngquant imagemin-svgo
+```sh
+npm install --save-dev @mole-inc/imagemin-mozjpeg @mole-inc/imagemin-pngquant imagemin-svgo
 
 # or
 
-yarn add --dev imagemin-mozjpeg imagemin-pngquant imagemin-svgo
+yarn add --dev @mole-inc/imagemin-mozjpeg @mole-inc/imagemin-pngquant imagemin-svgo
 ```
 
 To install **all** optional packages, run:
-```bash
-npm install imagemin-mozjpeg imagemin-pngquant imagemin-gifsicle imagemin-svgo  webp-loader lqip-loader responsive-loader sqip-loader sharp
+```sh
+npm install --save-dev @mole-inc/imagemin-mozjpeg @mole-inc/imagemin-pngquant imagemin-gifsicle imagemin-svgo @mole-inc/webp-loader @mole-inc/lqip-loader responsive-loader sqip-loader sharp
 
 # or
 
-yarn add --dev imagemin-mozjpeg imagemin-pngquant imagemin-gifsicle imagemin-svgo  webp-loader lqip-loader responsive-loader sqip-loader sharp
+yarn add --dev @mole-inc/imagemin-mozjpeg @mole-inc/imagemin-pngquant imagemin-gifsicle imagemin-svgo @mole-inc/webp-loader @mole-inc/lqip-loader responsive-loader sqip-loader sharp
 ```
 
 ::: warning
