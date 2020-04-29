@@ -98,7 +98,7 @@ yarn add --dev @mole-inc/imagemin-mozjpeg @mole-inc/imagemin-pngquant imagemin-g
 
 ## Documentation
 
-- 📄 If you want extra details of how to configure and use this project, the **full documentation** is available at [https://aceforth.com/docs/nuxt-optimized-images/][docs].
+- 📄 If you want extra details of how to configure and use this project, the **full documentation** is available at [https://mole-inc.github.io/nuxt-optimized-images/][docs].
 - 🐞 For **Bug reports** or **Feature requests**, use the [Issues section][issues].
 
 ## License
