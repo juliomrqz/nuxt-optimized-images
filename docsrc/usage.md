@@ -4,7 +4,6 @@ description: "You can import or require your images directly in your Vue compone
 permalink: /usage/
 created: "2019-03-01T13:35:06.636Z"
 published: "2019-03-01T13:35:06.636Z"
-modified: "2020-04-12T16:01:04Z"
 sidebarDepth: 3
 ---
 

@@ -4,7 +4,6 @@ description: "The default options for these optimizers should be enough in most 
 permalink: /configuration/
 created: "2019-03-01T13:35:06.636Z"
 published: "2019-03-01T13:35:06.636Z"
-modified: "2020-04-12T16:01:04Z"
 ---
 
 # Configuration

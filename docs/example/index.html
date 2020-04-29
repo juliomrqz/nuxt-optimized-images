@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Example</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    
+    <meta name="description" content="If the default values are good enough for your use-case, you don't have to specify them to have a shorter and cleaner `nuxt.config.js` file.">
+    <link rel="preload" href="/assets/css/0.styles.e359fa88.css" as="style"><link rel="preload" href="/assets/js/app.3f9b70fe.js" as="script"><link rel="preload" href="/assets/js/2.19e78776.js" as="script"><link rel="preload" href="/assets/js/7.e3ea1361.js" as="script"><link rel="prefetch" href="/assets/js/10.c8e90662.js"><link rel="prefetch" href="/assets/js/3.bca76002.js"><link rel="prefetch" href="/assets/js/4.a0ec45d4.js"><link rel="prefetch" href="/assets/js/5.29596922.js"><link rel="prefetch" href="/assets/js/6.8ef90af0.js"><link rel="prefetch" href="/assets/js/8.94ecf5f5.js"><link rel="prefetch" href="/assets/js/9.4460bb0b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e359fa88.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="example"><a href="#example" class="header-anchor">#</a> Example</h1> <p>The options specified here are the <strong>default</strong> values. So if they are good enough for your use-case, you don't have to specify them to have a shorter and cleaner <code>nuxt.config.js</code> file.</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// nuxt.config.js</span>
+<span class="token punctuation">{</span>
+  optimizedImages<span class="token operator">:</span> <span class="token punctuation">{</span>
+    inlineImageLimit<span class="token operator">:</span> <span class="token number">1000</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">imagesName</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> isDev <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> isDev <span class="token operator">?</span> <span class="token string">'[path][name][hash:optimized].[ext]'</span> <span class="token operator">:</span> <span class="token string">'img/[contenthash:7].[ext]'</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">responsiveImagesName</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> isDev <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> isDev <span class="token operator">?</span> <span class="token string">'[path][name]--[width][hash:optimized].[ext]'</span> <span class="token operator">:</span> <span class="token string">'img/[contenthash:7]-[width].[ext]'</span><span class="token punctuation">,</span>
+    handleImages<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'jpeg'</span><span class="token punctuation">,</span> <span class="token string">'png'</span><span class="token punctuation">,</span> <span class="token string">'svg'</span><span class="token punctuation">,</span> <span class="token string">'webp'</span><span class="token punctuation">,</span> <span class="token string">'gif'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    optimizeImages<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    optimizeImagesInDev<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    defaultImageLoader<span class="token operator">:</span> <span class="token string">'img-loader'</span><span class="token punctuation">,</span>
+    mozjpeg<span class="token operator">:</span> <span class="token punctuation">{</span>
+      quality<span class="token operator">:</span> <span class="token number">80</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    optipng<span class="token operator">:</span> <span class="token punctuation">{</span>
+      optimizationLevel<span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    pngquant<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    gifsicle<span class="token operator">:</span> <span class="token punctuation">{</span>
+      interlaced<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      optimizationLevel<span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    svgo<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">// enable/disable svgo plugins here</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    webp<span class="token operator">:</span> <span class="token punctuation">{</span>
+      preset<span class="token operator">:</span> <span class="token string">'default'</span><span class="token punctuation">,</span>
+      quality<span class="token operator">:</span> <span class="token number">75</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.3f9b70fe.js" defer></script><script src="/assets/js/2.19e78776.js" defer></script><script src="/assets/js/7.e3ea1361.js" defer></script>
+  </body>
+</html>

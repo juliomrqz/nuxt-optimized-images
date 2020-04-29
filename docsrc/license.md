@@ -4,7 +4,6 @@ description: "License of Nuxt Optimized Images"
 permalink: /license/
 created: "2019-03-01T13:35:06.636Z"
 published: "2019-03-01T13:35:06.636Z"
-modified: "2020-04-12T16:01:04Z"
 ---
 
 # License

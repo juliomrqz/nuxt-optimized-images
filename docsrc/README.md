@@ -1,10 +1,9 @@
 ---
 title: "Overview"
 description: "Automatically optimizes images used in Nuxt.js projects (jpeg, png, svg, webp and gif)"
-permalink: /docs/nuxt-optimized-images/
+permalink: /
 created: "2019-03-01T13:35:06.636Z"
 published: "2019-03-01T13:35:06.636Z"
-modified: "2020-04-12T16:01:04Z"
 ---
 
 # Nuxt Optimized Images
