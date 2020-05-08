@@ -22,7 +22,7 @@
   },
   "homepage": "https://aceforth.com/docs/nuxt-optimized-images/?utm_source=npm&utm_medium=readme&utm_campaign=nuxt-optimized-images",
   "dependencies": {
-    "consola": "^2.11.3",
+    "consola": "^2.12.1",
     "imagemin": "^7.0.1",
     "img-loader": "^3.0.1",
     "raw-loader": "^4.0.1",
