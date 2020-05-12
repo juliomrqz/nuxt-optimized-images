@@ -1,3 +1,12 @@
+## [1.0.1](https://github.com/aceforth/nuxt-optimized-images/compare/v1.0.0...v1.0.1) (2020-05-12)
+
+
+### Bug Fixes
+
+* fix importing for url-loader and file-loader ([c30be79](https://github.com/aceforth/nuxt-optimized-images/commit/c30be79fe7b61d821df8306a41c4d31a3a2dabae))
+
+
+
 # [1.0.0](https://github.com/aceforth/nuxt-optimized-images/compare/v0.4.0...v1.0.0) (2020-04-12)
 
 
