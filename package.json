@@ -45,7 +45,7 @@
     "imagemin-gifsicle": "7.0.0",
     "imagemin-mozjpeg": "8.0.0",
     "imagemin-pngquant": "8.0.0",
-    "imagemin-svgo": "7.1.0",
+    "imagemin-svgo": "8.0.0",
     "jest": "26.0.1",
     "jimp": "0.12.1",
     "loader-utils": "2.0.0",
