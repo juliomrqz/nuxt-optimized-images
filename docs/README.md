@@ -101,7 +101,7 @@ yarn add --dev imagemin-mozjpeg imagemin-pngquant imagemin-svgo
 
 To install **all** optional packages, run:
 ```bash
-npm install imagemin-mozjpeg imagemin-pngquant imagemin-gifsicle imagemin-svgo  webp-loader lqip-loader responsive-loader sqip-loader sharp
+npm install --save-dev imagemin-mozjpeg imagemin-pngquant imagemin-gifsicle imagemin-svgo  webp-loader lqip-loader responsive-loader sqip-loader sharp
 
 # or
 
