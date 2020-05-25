@@ -285,7 +285,7 @@ export default {
 If only the `size` or `sizes` param is used, the `?resize` param can also be omitted (e.g. `my-image.jpg?size=300`). But it is required for all other parameters of `responsive-loader`.
 :::
 
-You can also set global configs in the [`responsive`](#responsive) property (in the `nuxt.config.js` file) and define, for example, default sizes which will get generated when you don't specify one for an image (e.g. only `my-image.jpg?resize`).
+You can also set global configs in the [`responsive`](../configuration/#responsive) property (in the `nuxt.config.js` file) and define, for example, default sizes which will get generated when you don't specify one for an image (e.g. only `my-image.jpg?resize`).
 
 
 
