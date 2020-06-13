@@ -22,7 +22,7 @@
   },
   "homepage": "https://aceforth.com/docs/nuxt-optimized-images/?utm_source=npm&utm_medium=readme&utm_campaign=nuxt-optimized-images",
   "dependencies": {
-    "consola": "^2.12.2",
+    "consola": "^2.13.0",
     "imagemin": "^7.0.1",
     "img-loader": "^3.0.1",
     "raw-loader": "^4.0.1",
@@ -53,7 +53,7 @@
     "lodash.isstring": "4.0.1",
     "lqip-loader": "2.2.0",
     "responsive-loader": "1.2.0",
-    "sharp": "0.25.3",
+    "sharp": "0.25.4",
     "sqip-loader": "1.0.0",
     "upath": "1.2.0",
     "webp-loader": "0.6.0"
