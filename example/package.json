@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@nuxtjs/bulma": "1.2.7",
-    "nuxt": "2.12.2"
+    "nuxt": "2.13.0"
   },
   "devDependencies": {
     "cross-env": "7.0.2",
