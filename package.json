@@ -29,8 +29,8 @@
     "url-loader": "^4.1.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "8.3.5",
-    "@commitlint/config-conventional": "8.3.4",
+    "@commitlint/cli": "9.0.1",
+    "@commitlint/config-conventional": "9.0.1",
     "conventional-changelog-cli": "2.0.34",
     "eslint": "7.3.0",
     "eslint-config-dev": "2.0.0",
