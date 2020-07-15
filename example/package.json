@@ -2,7 +2,7 @@
   "name": "@aceforth/nuxt-optimized-images-example",
   "version": "1.0.0",
   "description": "Nuxt Optimzed Images Example Project",
-  "author": "Aceforth <opensource@aceforth.com>",
+  "author": "Julio Marquez <opensource@marquez.co>",
   "private": true,
   "scripts": {
     "dev": "nuxt",

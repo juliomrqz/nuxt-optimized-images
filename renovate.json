@@ -1,6 +1,6 @@
 {
   "extends": [
-    "@aceforth"
+    "@nuxtjs"
   ],
   "schedule": [
     "after 10pm every weekday",

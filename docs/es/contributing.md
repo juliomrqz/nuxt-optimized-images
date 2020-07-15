@@ -69,4 +69,4 @@ npm run test
 - Si corriges un error:
   - Proporciona una descripción detallada del error en el PR. Demo en vivo preferido.
 
-[issues-link]: https://github.com/aceforth/nuxt-optimized-images/issues
+[issues-link]: https://github.com/juliomrqz/nuxt-optimized-images/issues

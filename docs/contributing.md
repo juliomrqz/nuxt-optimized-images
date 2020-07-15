@@ -70,4 +70,4 @@ npm run test
   - Provide detailed description of the bug in the PR. Live demo preferred.
 
 
-[issues-link]: https://github.com/aceforth/nuxt-optimized-images/issues
+[issues-link]: https://github.com/juliomrqz/nuxt-optimized-images/issues

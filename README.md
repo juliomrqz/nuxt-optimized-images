@@ -1,10 +1,9 @@
-[![Aceforth Project](https://img.shields.io/badge/Aceforth-project-blue.svg)](https://aceforth.com/docs/nuxt-optimized-images)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/db0e010ec71b462b8732b926e5799cc6)](https://www.codacy.com/app/aceforth/nuxt-optimized-images?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=aceforth/nuxt-optimized-images&amp;utm_campaign=Badge_Grade)
-[![Travis](https://img.shields.io/travis/aceforth/nuxt-optimized-images.svg)](https://travis-ci.org/aceforth/nuxt-optimized-images)
-[![David](https://img.shields.io/david/peer/aceforth/nuxt-optimized-images.svg)](https://david-dm.org/aceforth/nuxt-optimized-images?type=peer)
-[![David](https://img.shields.io/david/dev/aceforth/nuxt-optimized-images.svg)](https://david-dm.org/aceforth/nuxt-optimized-images?type=dev)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/db0e010ec71b462b8732b926e5799cc6)](https://www.codacy.com/app/juliomrqz/nuxt-optimized-images?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=juliomrqz/nuxt-optimized-images&amp;utm_campaign=Badge_Grade)
+[![Travis](https://img.shields.io/travis/juliomrqz/nuxt-optimized-images.svg)](https://travis-ci.org/juliomrqz/nuxt-optimized-images)
+[![David](https://img.shields.io/david/peer/juliomrqz/nuxt-optimized-images.svg)](https://david-dm.org/juliomrqz/nuxt-optimized-images?type=peer)
+[![David](https://img.shields.io/david/dev/juliomrqz/nuxt-optimized-images.svg)](https://david-dm.org/juliomrqz/nuxt-optimized-images?type=dev)
 [![version](https://img.shields.io/npm/v/@aceforth/nuxt-optimized-images.svg)](https://www.npmjs.com/package/@aceforth/nuxt-optimized-images)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/aceforth/nuxt-optimized-images/develop/LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/juliomrqz/nuxt-optimized-images/develop/LICENSE)
 
 # :sunrise: :rocket: Nuxt Optimized Images
 
@@ -108,14 +107,16 @@ yarn add --dev imagemin-mozjpeg imagemin-pngquant imagemin-gifsicle imagemin-svg
 
 ## Documentation & Support
 
-- 📄 If you want extra details of how to configure and use this project, the **full documentation** is available at [https://aceforth.com/docs/nuxt-optimized-images/][docs].
+- 📄 If you want extra details of how to configure and use this project, the **full documentation** is available at [https://marquez.co/docs/nuxt-optimized-images/][docs].
 - 🐞 For **Bug reports** or **Feature requests**, use the [Issues section][issues].
-- 💬 For questions, go to [https://spectrum.chat/bazzite/open-source][spectrum-chat].
-- 🚀 You may also want to **follow the company** supporting this project [on Twitter][twitter].
+- 💬 For **questions**, you can also use the [Issues section][issues].
+- 🚀 You may also want to **follow me** [on Twitter][twitter].
+
 
 ## Professional Support
 
-This project is sponsored by [Aceforth][aceforth-website]. If you require Professional Assistance on your project(s), please contact us at [https://aceforth.com/contact][contact-page].
+This project is sponsored by me, a Full Stack Developers. If you require Professional Assistance on your project(s), please contact me at [https://marquez.co][support-page].
+
 
 ## Code of Conduct
 
@@ -126,19 +127,17 @@ Everyone participating in this project is expected to agree to abide by the [Cod
 Code released under the [MIT License][license-page].
 
 
-![](https://ga-beacon.appspot.com/UA-65885578-17/aceforth/nuxt-optimized-images?pixel)
+![](https://ga-beacon.appspot.com/UA-65885578-17/juliomrqz/nuxt-optimized-images?pixel)
 
-[docs]: https://aceforth.com/docs/nuxt-optimized-images/?utm_source=github&utm_medium=readme&utm_campaign=nuxt-optimized-images
-[docs-es]: https://aceforth.com/es/docs/nuxt-optimized-images/?utm_source=github&utm_medium=readme&utm_campaign=nuxt-optimized-images
-[docs-configuration]: https://aceforth.com/docs/nuxt-optimized-images/configuration/?utm_source=github&utm_medium=readme&utm_campaign=nuxt-optimized-images
-[docs-configuration-optimizeimagesindev]: https://aceforth.com/docs/nuxt-optimized-images/configuration/?utm_source=github&utm_medium=readme&utm_campaign=nuxt-optimized-images#optimizeimagesindev
-[issues]: https://github.com/aceforth/nuxt-optimized-images/issues
-[twitter]: https://twitter.com/AceforthHQ
-[aceforth-website]: https://aceforth.com?utm_source=github&utm_medium=readme&utm_campaign=nuxt-optimized-images
-[contact-page]: https://aceforth.com/contact?utm_source=github&utm_medium=readme&utm_campaign=nuxt-optimized-images
-[code-of-conduct]: https://aceforth.com/open-source/code-of-conduct?utm_source=github&utm_medium=readme&utm_campaign=nuxt-optimized-images
-[license-page]: https://github.com/aceforth/nuxt-optimized-images/blob/develop/LICENSE
-[spectrum-chat]: https://spectrum.chat/bazzite/login?r=https://spectrum.chat/bazzite/open-source
+[docs]: https://marquez.co/docs/nuxt-optimized-images/?utm_source=github&utm_medium=readme&utm_campaign=nuxt-optimized-images
+[docs-es]: https://marquez.co/es/docs/nuxt-optimized-images/?utm_source=github&utm_medium=readme&utm_campaign=nuxt-optimized-images
+[docs-configuration]: https://marquez.co/docs/nuxt-optimized-images/configuration/?utm_source=github&utm_medium=readme&utm_campaign=nuxt-optimized-images
+[docs-configuration-optimizeimagesindev]: https://marquez.co/docs/nuxt-optimized-images/configuration/?utm_source=github&utm_medium=readme&utm_campaign=nuxt-optimized-images#optimizeimagesindev
+[issues]: https://github.com/juliomrqz/nuxt-optimized-images/issues
+[twitter]: https://twitter.com/juliomrqz
+[support-page]: https://marquez.co/?utm_source=github&utm_medium=readme&utm_campaign=nuxt-optimized-images
+[code-of-conduct]: https://www.contributor-covenant.org/version/2/0/code_of_conduct/
+[license-page]: https://github.com/juliomrqz/nuxt-optimized-images/blob/develop/LICENSE
 
 [imagemin-mozjpeg]: https://www.npmjs.com/package/imagemin-mozjpeg
 [imagemin-pngquant]: https://www.npmjs.com/package/imagemin-pngquant
