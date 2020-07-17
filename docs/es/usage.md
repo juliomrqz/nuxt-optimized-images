@@ -1,14 +1,12 @@
 ---
 title: "Uso"
 description: "Puedes importar o requerir tus imágenes directamente en los componentes de su Vue para su optimización"
-permalink: /docs/nuxt-optimized-images/usage/
-created: "2019-03-01T13:35:06.636Z"
-published: "2019-03-01T13:35:06.636Z"
-modified: "2020-04-12T16:01:04Z"
-sidebarDepth: 3
+created: "2019-03-01T13:35:06Z"
+published: "2019-03-01T13:35:06Z"
+modified: "2020-07-15T16:46:04Z"
+position: 2
+category: "Primeros Pasos"
 ---
-
-# Uso
 
 Puede importar o requerir sus imágenes directamente en tus componentes Vue:
 
@@ -26,12 +24,14 @@ o
 </template>
 ```
 
-::: warning Advertencia
-Tenga en cuenta que las imágenes sólo se optimizan [en producción de forma predeterminada](./configuration/README.md#optimizeimagesindev) para reducir el tiempo de compilación en tu entorno de desarrollo.
-:::
+<docs-alert>
+
+Tenga en cuenta que las imágenes sólo se optimizan [en producción de forma predeterminada](/es/docs/nuxt-optimized-images/configuration#optimizeimagesindev) para reducir el tiempo de compilación en tu entorno de desarrollo.
+
+</docs-alert>
 
 
-Si el archivo está por debajo del [límite para imágenes en línea](./configuration/README.md#inlineimagelimit), el `require(...)` devolverá una una `data-uri` del tipo base64 (`data:image/jpeg;base64,...`).
+Si el archivo está por debajo del [límite para imágenes en línea](/es/docs/nuxt-optimized-images/configuration#inlineimagelimit), el `require(...)` devolverá una una `data-uri` del tipo base64 (`data:image/jpeg;base64,...`).
 
 
 ## Parámetros de Consulta
@@ -48,9 +48,11 @@ Hay opciones adicionales que puede especificar como parámetros de consulta cuan
 * [`?sqip`](#sqip): * [`?sqip`](#sqip): Generate a low-quality svg-image placeholder del tipo SVG
 * [`?resize`](#resize): Cambia el tamaño de una imagen
 
-::: tip
+<docs-alert variant="info">
+
 Hay algunos casos en los que no quieres hacer referencia a un archivo u obtener un `data-uri` de base64 pero en realidad lo quieres es incluir el archivo sin procesar directamente en tu HTML. Especialmente para SVGs porque no se puede estilizar con CSS si están en un atributo `src` en una imagen.
-:::
+
+</docs-alert>
 
 ### ?include
 
@@ -75,13 +77,15 @@ Como se ha descrito anteriormente, esto es útil para los SVGs para que puedas e
 -->
 ```
 
-La imagen seguirá siendo optimizada, incluso si se incluye directamente en tu contenido (pero por [defecto sólo en producción](./configuration/README.md#optimizeimagesindev)).
+La imagen seguirá siendo optimizada, incluso si se incluye directamente en tu contenido (pero por [defecto sólo en producción](/es/docs/nuxt-optimized-images/configuration#optimizeimagesindev)).
 
 ### ?webp
 
-::: warning Advertencia
+<docs-alert>
+
 Requiere el paquete de optimización opcional [`webp-loader`][webp-loader]
-:::
+
+</docs-alert>
 
 WebP es un formato de imagen mejor y más pequeño, pero todavía no es tan común.
 
@@ -111,7 +115,7 @@ Para [los navegadores que aún no son compatibles con WebP][caniuse-webp], tambi
 
 ### ?inline
 
-Puede especificar un [límite para las imágenes en línea](./configuration/README.md#inlineimagelimit) que se incluirán como un `data-uri` directamente en tu contenido en lugar de hacer referencia a un archivo si el tamaño del archivo está por debajo de ese límite.
+Puede especificar un [límite para las imágenes en línea](/es/docs/nuxt-optimized-images/configuration#inlineimagelimit) que se incluirán como un `data-uri` directamente en tu contenido en lugar de hacer referencia a un archivo si el tamaño del archivo está por debajo de ese límite.
 
 Por lo general, no deseas especificar un límite demasiado alto, pero puede haber casos en los que aún desees incluir imágenes más grandes en línea.
 
@@ -133,11 +137,13 @@ El inline sólo se aplicará exactamente a esta importación, así que si import
 
 ### ?url
 
-Cuando tiene una imagen más pequeña que el [límite definido para el inlineado](./configuration/README.md#inlineimagelimit), normalmente se rellena automáticamente. Si no quieres que un archivo pequeño específico sea inlineado, puedes usar el parámetro de consulta `?url` para obtener siempre una URL de imagen, sin importar el límite de inlineado.
+Cuando tiene una imagen más pequeña que el [límite definido para el inlineado](/es/docs/nuxt-optimized-images/configuration#inlineimagelimit), normalmente se rellena automáticamente. Si no quieres que un archivo pequeño específico sea inlineado, puedes usar el parámetro de consulta `?url` para obtener siempre una URL de imagen, sin importar el límite de inlineado.
 
-::: tip
-Si estás usando mucho esta opción, podría tener sentido [deshabilitar el inline](./configuration/README.md#inlineimagelimit) completamente y usar el parámetro [`?inline`](#inline) para archivos individuales.
-:::
+<docs-alert variant="info">
+
+Si estás usando mucho esta opción, podría tener sentido [deshabilitar el inline](/es/docs/nuxt-optimized-images/configuration#inlineimagelimit) completamente y usar el parámetro [`?inline`](#inline) para archivos individuales.
+
+</docs-alert>
 
 ```vue
 <template>
@@ -167,9 +173,11 @@ También puede combinarse con la consulta de recursos `?url` o `?inline` (por ej
 
 ### ?lqip
 
-::: warning Advertencia
+<docs-alert>
+
 Requiere el paquete opcional [`lqip-loader`][lqip-loader]
-:::
+
+</docs-alert>
 
 Cuando se utiliza esta consulta de recursos, se crea una imagen muy pequeña (de unos 10x7 píxeles). Puedes entonces mostrar esta imagen como un placeholder hasta que la imagen real (grande) se haya cargado.
 
@@ -206,9 +214,11 @@ img[lazy='loading'] {
 
 ### ?lqip-colors
 
-::: warning Advertencia
-Requiere el paquete opcional [`lqip-loader`][lqip-loader]
-:::
+<docs-alert>
+
+Requiere el paquete opcional [`lqip-loader`][lqip-loader].
+
+</docs-alert>
 
 Esta consulta de recurso te devuelve un **array con valores hexadecimales** de los colores dominantes de una imagen. También puedes utilizarlo como placeholder hasta que la imagen real se haya cargado (por ejemplo, como fondo) como lo hace el *Buscador de Imágenes de Google*.
 
@@ -230,9 +240,11 @@ El número de colores devueltos puede variar y depende de cuántos colores difer
 
 ### ?sqip
 
-::: warning Advertencia
+<docs-alert>
+
 Requiere el paquete opcional [`sqip-loader`][sqip-loader]
-:::
+
+</docs-alert>
 
 Otra forma de generar placeholders es usando `sqip-loader`. Cuando se utiliza esta consulta de recursos, se crea una imagen **SVG** muy pequeña.
 
@@ -248,9 +260,11 @@ Otra forma de generar placeholders es usando `sqip-loader`. Cuando se utiliza es
 
 ### ?resize
 
-::: warning
+<docs-alert>
+
 Requiere el paquete opcional [`responsive-loader`][responsive-loader] y también [`jimp`][jimp] (implementación en node, más lenta) o [`sharp`][sharp] (binario, más rápido)
-:::
+
+</docs-alert>
 
 Después de la consulta de recursos `?resize`, puedes añadir cualquier otra consulta del [`responsive-loader`][responsive-loader] que te permites redimensionar las imágenes y crear conjuntos de orígenes enteros.
 
@@ -277,9 +291,11 @@ export default {
 </script>
 ```
 
-::: tip
+<docs-alert variant="info">
+
 Si sólo se utiliza el parámetro `size` o `sizes`, el parámetro `?resize` también puede omitirse (p. ej. `my-image.jpg?size=300`). Pero es necesario para todos los demás parámetros de `responsive-loader`.
-:::
+
+</docs-alert>
 
 También puedes establecer configuraciones globales en la propiedad [`responsive`](#responsive) (en el archivo `nuxt.config.js`) y definir, por ejemplo, los tamaños predeterminados que se generarán cuando no especifiques uno para una imagen (por ejemplo, sólo `my-image.jpg?resize`).
 

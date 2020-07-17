@@ -1,13 +1,12 @@
 ---
 title: "Contribución"
 description: "Pasos para facilitar el desarrollo y la depuración de Nuxt Optimized Images."
-permalink: /docs/nuxt-optimized-images/contributing
-created: "2019-03-01T18:51:10.483Z"
-published: "2019-03-01T18:51:10.483Z"
-modified: "2020-04-12T16:01:04Z"
+created: "2019-03-01T18:51:10Z"
+published: "2019-03-01T18:51:10Z"
+modified: "2020-07-15T16:46:04Z"
+position: 5
+category: "Primeros Pasos"
 ---
-
-# Contribución
 
 Asegúrese de leer esta **Guía de contribución** antes de hacer una contribución.
 

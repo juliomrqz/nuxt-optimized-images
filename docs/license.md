@@ -1,13 +1,12 @@
 ---
 title: "License"
 description: "License of Nuxt Optimized Images"
-permalink: /docs/nuxt-optimized-images/license/
-created: "2019-03-01T13:35:06.636Z"
-published: "2019-03-01T13:35:06.636Z"
-modified: "2020-04-12T16:01:04Z"
+created: "2019-03-01T13:35:06Z"
+published: "2019-03-01T13:35:06Z"
+modified: "2020-07-15T16:46:04Z"
+position: 6
+category: "Getting started"
 ---
-
-# License
 
 ```
 MIT License

@@ -1,13 +1,12 @@
 ---
 title: "Contributing"
 description: "Steps for easier development and debugging purposes of Nuxt Optimized Images."
-permalink: /docs/nuxt-optimized-images/contributing
-created: "2019-03-01T18:51:10.483Z"
-published: "2019-03-01T18:51:10.483Z"
-modified: "2020-04-12T16:01:04Z"
+created: "2019-03-01T18:51:10Z"
+published: "2019-03-01T18:51:10Z"
+modified: "2020-07-15T16:46:04Z"
+position: 5
+category: "Getting started"
 ---
-
-# Contributing
 
 Please make sure to read this **Contributing Guide** before making a contribution.
 

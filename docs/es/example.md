@@ -1,13 +1,12 @@
 ---
 title: "Ejemplo"
 description: "Si los valores por defecto son lo suficientemente buenos para tu caso de uso, no tienes que especificarlos para tener un archivo `nuxt.config.js` más corto y limpio."
-permalink: /docs/nuxt-optimized-images/example/
-created: "2019-03-01T13:35:06.636Z"
-published: "2019-03-01T13:35:06.636Z"
-modified: "2019-12-19T00:43:45.138Z"
+created: "2019-03-01T13:35:06Z"
+published: "2019-03-01T13:35:06Z"
+modified: "2020-07-15T16:46:04Z"
+position: 4
+category: "Primeros Pasos"
 ---
-
-# Ejemplo
 
 Las opciones especificadas aquí son los valores **por defecto**. Así que si son lo suficientemente buenos para tu caso de uso, no tienes que especificarlos para así tener un archivo `nuxt.config.js` más corto y limpio.
 

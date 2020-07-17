@@ -1,14 +1,12 @@
 ---
 title: "Usage"
 description: "You can import or require your images directly in your Vue components for optimizations"
-permalink: /docs/nuxt-optimized-images/usage/
-created: "2019-03-01T13:35:06.636Z"
-published: "2019-03-01T13:35:06.636Z"
-modified: "2020-04-12T16:01:04Z"
-sidebarDepth: 3
+created: "2019-03-01T13:35:06Z"
+published: "2019-03-01T13:35:06Z"
+modified: "2020-07-15T16:46:04Z"
+position: 2
+category: "Getting started"
 ---
-
-# Usage
 
 You can import or require your images directly in your Vue components:
 
@@ -26,11 +24,13 @@ or
 </template>
 ```
 
-::: warning
-Please be aware that images only get optimized [in production by default](./configuration/README.md#optimizeimagesindev) to reduce the build time in your development environment.
-:::
+<docs-alert>
 
-If the file is below the [limit for inlining images](./configuration/README.md#inlineimagelimit), the `require(...)` will return a base64 `data-uri` (`data:image/jpeg;base64,...`).
+Please be aware that images only get optimized [in production by default](/docs/nuxt-optimized-images/configuration#optimizeimagesindev) to reduce the build time in your development environment.
+
+</docs-alert>
+
+If the file is below the [limit for inlining images](/docs/nuxt-optimized-images/configuration#inlineimagelimit), the `require(...)` will return a base64 `data-uri` (`data:image/jpeg;base64,...`).
 
 
 ## Query params
@@ -47,9 +47,11 @@ There are additional options you can specify as query params when you import the
 * [`?sqip`](#sqip): Generate a low-quality svg-image placeholder
 * [`?resize`](#resize): Resize an image
 
-::: tip
+<docs-alert variant="info">
+
 There are some cases where you don't want to reference a file or get a base64 `data-uri` but you actually want to include the raw file directly into your HTML. Especially for SVGs because you can't style them with CSS if they are in an `src` attribute on an image.
-:::
+
+</docs-alert>
 
 ### ?include
 
@@ -74,14 +76,16 @@ As described above, this is useful for SVGs so you can style them with CSS.
 -->
 ```
 
-The image will still get optimized, even if it is directly included in your content (but by [default only in production](./configuration/README.md#optimizeimagesindev)).
+The image will still get optimized, even if it is directly included in your content (but by [default only in production](/docs/nuxt-optimized-images/configuration#optimizeimagesindev)).
 
 
 ### ?webp
 
-::: warning
+<docs-alert>
+
 Requires the optional optimization package [`webp-loader`][webp-loader]
-:::
+
+</docs-alert>
 
 WebP is an even better and smaller image format but it is still not that common.
 
@@ -111,7 +115,7 @@ For [browsers that don't yet support WebP][caniuse-webp], you can also provide a
 
 ### ?inline
 
-You can specify a [limit for inlining](./configuration/README.md#inlineimagelimit) images which will include it as a `data-uri` directly in your content instead of referencing a file if the file size is below that limit.
+You can specify a [limit for inlining](/docs/nuxt-optimized-images/configuration#inlineimagelimit) images which will include it as a `data-uri` directly in your content instead of referencing a file if the file size is below that limit.
 
 You usually don't want to specify a too high limit but there may be cases where you still want to inline larger images.
 
@@ -133,12 +137,14 @@ The inlining will only get applied to exactly this import, so if you import the 
 
 ### ?url
 
-When you have an image smaller than your defined [limit for inlining](./configuration/README.md#inlineimagelimit), it normally gets inlined automatically.
+When you have an image smaller than your defined [limit for inlining](/docs/nuxt-optimized-images/configuration#inlineimagelimit), it normally gets inlined automatically.
 If you don't want a specific small file to get inlined, you can use the `?url` query param to always get back an image URL, regardless of the inline limit.
 
-::: tip
-If you are using this option a lot, it could also make sense to [disable the inlining](./configuration/README.md#inlineimagelimit) completely and use the [`?inline`](#inline) param for single files.
-:::
+<docs-alert variant="info">
+
+If you are using this option a lot, it could also make sense to [disable the inlining](/docs/nuxt-optimized-images/configuration#inlineimagelimit) completely and use the [`?inline`](#inline) param for single files.
+
+</docs-alert>
 
 ```vue
 <template>
@@ -168,9 +174,11 @@ This can also be combined with the `?url` or `?inline` resource query (e.g. `?or
 
 ### ?lqip
 
-::: warning
+<docs-alert>
+
 Requires the optional package [`lqip-loader`][lqip-loader]
-:::
+
+</docs-alert>
 
 When using this resource query, a very small (about `10x7 pixels`) image gets created. You can then display this image as a placeholder until the real (big) image has loaded.
 
@@ -208,9 +216,11 @@ img[lazy='loading'] {
 
 ### ?lqip-colors
 
-::: warning
+<docs-alert>
+
 Requires the optional package [`lqip-loader`][lqip-loader]
-:::
+
+</docs-alert>
 
 This resource query returns you an **array with hex values** of the dominant colors of an image. You can also use this as a placeholder until the real image has loaded (e.g. as a background) as the *Google Picture Search* does.
 
@@ -233,9 +243,11 @@ The number of colors returned can vary and depends on how many different colors 
 
 ### ?sqip
 
-::: warning
+<docs-alert>
+
 Requires the optional package [`sqip-loader`][sqip-loader]
-:::
+
+</docs-alert>
 
 Another way to generate placeholders is using `sqip-loader`. When using this resource query, a very small **SVG image** gets created.
 
@@ -252,9 +264,11 @@ Another way to generate placeholders is using `sqip-loader`. When using this res
 
 ### ?resize
 
-::: warning
+<docs-alert>
+
 Requires the optional package [`responsive-loader`][responsive-loader] and either [`jimp`][jimp] (node implementation, slower) or [`sharp`][sharp] (binary, faster)
-:::
+
+</docs-alert>
 
 After the `?resize` resource query, you can add any other query of the [`responsive-loader`][responsive-loader] which allows you to resize images and create whole source sets.
 
@@ -281,11 +295,13 @@ export default {
 </script>
 ```
 
-::: tip
-If only the `size` or `sizes` param is used, the `?resize` param can also be omitted (e.g. `my-image.jpg?size=300`). But it is required for all other parameters of `responsive-loader`.
-:::
+<docs-alert variant="info">
 
-You can also set global configs in the [`responsive`](../configuration/#responsive) property (in the `nuxt.config.js` file) and define, for example, default sizes which will get generated when you don't specify one for an image (e.g. only `my-image.jpg?resize`).
+If only the `size` or `sizes` param is used, the `?resize` param can also be omitted (e.g. `my-image.jpg?size=300`). But it is required for all other parameters of `responsive-loader`.
+
+</docs-alert>
+
+You can also set global configs in the [`responsive`](./docs/nuxt-optimized-images/configuration#responsive) property (in the `nuxt.config.js` file) and define, for example, default sizes which will get generated when you don't specify one for an image (e.g. only `my-image.jpg?resize`).
 
 
 

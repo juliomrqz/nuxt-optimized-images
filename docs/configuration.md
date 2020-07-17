@@ -1,13 +1,12 @@
 ---
 title: "Configuration"
 description: "The default options for these optimizers should be enough in most cases, but you can overwrite every available option if you want to"
-permalink: /docs/nuxt-optimized-images/configuration/
-created: "2019-03-01T13:35:06.636Z"
-published: "2019-03-01T13:35:06.636Z"
-modified: "2020-04-12T16:01:04Z"
+created: "2019-03-01T13:35:06Z"
+published: "2019-03-01T13:35:06Z"
+modified: "2020-07-15T16:46:04Z"
+position: 3
+category: "Getting started"
 ---
-
-# Configuration
 
 This module uses [img-loader](https://www.npmjs.com/package/img-loader) under the hood which is based on [mozjpeg][imagemin-mozjpeg], [optipng][imagemin-optipng], [gifsicle][imagemin-gifsicle] and [svgo][imagemin-svgo].
 
@@ -22,7 +21,7 @@ The default options for these optimizers should be enough in most cases, but you
 
 If you don't want one of these handled by `@aceforth/nuxt-optimized-images` because you, for example, have another plugin or custom loader rule, simply remove it from the array.
 
-Please note that an image being handled does not mean it also gets automatically optimized. The required optimization package for that image also has to be installed. Please read the [optimization packages](./README.md#optimization-packages) section for more information.
+Please note that an image being handled does not mean it also gets automatically optimized. The required optimization package for that image also has to be installed. Please read the [optimization packages](/docs/nuxt-optimized-images#optimization-packages) section for more information.
 
 If an image gets handled but not optimized, it means that the original image will get used and copied for the build.
 
@@ -44,9 +43,11 @@ To completely disable image inlining, set this value to `-1`. You will then alwa
 
 The filename of the optimized images.
 
-::: warning
+<docs-alert>
+
 Make sure you keep the `[hash]` fragment so they receive a new filename if the content changes.
-:::
+
+</docs-alert>
 
 ## responsiveImagesName
 
@@ -55,9 +56,11 @@ Make sure you keep the `[hash]` fragment so they receive a new filename if the c
 
 The filename of the responsive images.
 
-::: warning
+<docs-alert>
+
 Make sure you keep the `[hash]` fragment so they receive a new filename if the content changes.
-:::
+
+</docs-alert>
 
 ## optimizeImagesInDev
 
@@ -68,9 +71,11 @@ For faster development builds and HMR, images will not get optimized by default 
 
 ## mozjpeg
 
-::: warning
+<docs-alert>
+
 Requires the optional optimization package [`imagemin-mozjpeg`][imagemin-mozjpeg]
-:::
+
+</docs-alert>
 
 - Type: `object`
 - Default: `{}`
@@ -79,9 +84,11 @@ Requires the optional optimization package [`imagemin-mozjpeg`][imagemin-mozjpeg
 
 ## pngquant
 
-::: warning
+<docs-alert>
+
 Requires the optional optimization package [`imagemin-pngquant`][imagemin-pngquant]
-:::
+
+</docs-alert>
 
 - Type: `object`
 - Default: `{}`
@@ -90,9 +97,11 @@ Requires the optional optimization package [`imagemin-pngquant`][imagemin-pngqua
 
 ## optipng
 
-::: warning
+<docs-alert>
+
 Requires the optional optimization package [`imagemin-optipng`][imagemin-optipng]
-:::
+
+</docs-alert>
 
 - Type: `object`
 - Default: `{}`
@@ -101,9 +110,11 @@ Requires the optional optimization package [`imagemin-optipng`][imagemin-optipng
 
 ## gifsicle
 
-::: warning
+<docs-alert>
+
 Requires the optional optimization package [`imagemin-gifsicle`][imagemin-gifsicle]
-:::
+
+</docs-alert>
 
 - Type: `object`
 - Default:
@@ -119,9 +130,11 @@ Requires the optional optimization package [`imagemin-gifsicle`][imagemin-gifsic
 
 ## svgo
 
-::: warning
+<docs-alert>
+
 Requires the optional optimization package [`imagemin-svgo`][imagemin-svgo]
-:::
+
+</docs-alert>
 
 - Type: `object`
 - Default: `{}`
@@ -142,9 +155,11 @@ Single svgo plugins can get disabled/enabled in the plugins array:
 
 ## webp
 
-::: warning
+<docs-alert>
+
 Requires the optional optimization package [`webp-loader`][webp-loader]
-:::
+
+</docs-alert>
 
 - Type: `object`
 - Default: `{}`
@@ -153,9 +168,11 @@ Requires the optional optimization package [`webp-loader`][webp-loader]
 
 ## responsive
 
-::: warning
+<docs-alert>
+
 Requires the optional optimization package [`responsive-loader`][responsive-loader]
-:::
+
+</docs-alert>
 
 - Type: `object`
 - Default: `{}`
@@ -164,22 +181,26 @@ The configuration for the [`responsive-loader`][responsive-loader] can be define
 
 ## defaultImageLoader
 
-::: warning
+<docs-alert>
+
 Requires the optional optimization package `responsive-loader`
-:::
+
+</docs-alert>
 
 - Type: `string`
 - Default: `'img-loader'`
 
 By default, img-loader handles most of the requests.
 
-::: tip
-If you use the `responsive-loader` a lot and don't want to add the [`?resize`](./usage/README.md#resize) query param to every require, you can set this value to `'responsive-loader'`.
+<docs-alert variant="info">
 
-After that, `responsive-loader` will handle *all* JPEG and PNG images per default, even without an additional query param. Just be aware that you can't use any of the [query params `@aceforth/nuxt-optimized-images`](./usage/README.md) provides anymore on these images because the request just gets forwarded and not modified anymore.
+If you use the `responsive-loader` a lot and don't want to add the [`?resize`](/docs/nuxt-optimized-images/usage#resize) query param to every require, you can set this value to `'responsive-loader'`.
+
+After that, `responsive-loader` will handle *all* JPEG and PNG images per default, even without an additional query param. Just be aware that you can't use any of the [query params `@aceforth/nuxt-optimized-images`](/docs/nuxt-optimized-images/usage) provides anymore on these images because the request just gets forwarded and not modified anymore.
 
 All other formats (SVG, WEBP and GIF) still work as before with the `img-loader` and so have all query params available.
-:::
+
+</docs-alert>
 
 ## optimizeImages
 
@@ -188,9 +209,11 @@ All other formats (SVG, WEBP and GIF) still work as before with the `img-loader`
 
 If you don't want the images to be optimized, you can set this value to `false`.
 
-::: warning
+<docs-alert>
+
 If you don't have any optimization package installed and this option is set to `true`, no image will get optimized. In this case, a warning gets printed in the console during build to inform you about a possible misconfiguration.
-:::
+
+</docs-alert>
 
 
 [imagemin-mozjpeg]: https://www.npmjs.com/package/imagemin-mozjpeg
