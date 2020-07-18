@@ -297,7 +297,7 @@ Si sólo se utiliza el parámetro `size` o `sizes`, el parámetro `?resize` tamb
 
 </docs-alert>
 
-También puedes establecer configuraciones globales en la propiedad [`responsive`](#responsive) (en el archivo `nuxt.config.js`) y definir, por ejemplo, los tamaños predeterminados que se generarán cuando no especifiques uno para una imagen (por ejemplo, sólo `my-image.jpg?resize`).
+También puedes establecer configuraciones globales en la propiedad [`responsive`](/es/docs/nuxt-optimized-images/configuration#responsive) (en el archivo `nuxt.config.js`) y definir, por ejemplo, los tamaños predeterminados que se generarán cuando no especifiques uno para una imagen (por ejemplo, sólo `my-image.jpg?resize`).
 
 
 [caniuse-webp]: https://caniuse.com/#feat=webp
