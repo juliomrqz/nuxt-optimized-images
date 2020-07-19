@@ -1,3 +1,17 @@
+# [1.1.0](https://github.com/juliomrqz/nuxt-optimized-images/compare/v1.0.1...v1.1.0) (2020-07-19)
+
+* dependencies updates
+
+### Bug Fixes
+
+* **docs:** fix invalid links in the Usage article of Docs ([3cbb0e4](https://github.com/juliomrqz/nuxt-optimized-images/commit/3cbb0e4d12bda36b27ba04281ead71927c3a1a4f))
+* fix counting loaders installed ([#196](https://github.com/juliomrqz/nuxt-optimized-images/issues/196)) ([e36dcac](https://github.com/juliomrqz/nuxt-optimized-images/commit/e36dcacff4b720fb885ecf0c5195d576920136b0))
+
+### Refactor
+
+* update layout of docs articles ([130d851](https://github.com/juliomrqz/nuxt-optimized-images/commit/130d85179fef844cb4d479f01f9dc9d2fcea2460))
+* update project owner ([29189b0](https://github.com/juliomrqz/nuxt-optimized-images/commit/29189b075f7dc096cefd0c86fb6c5b927f986a93))
+
 ## [1.0.1](https://github.com/juliomrqz/nuxt-optimized-images/compare/v1.0.0...v1.0.1) (2020-05-12)
 
 
