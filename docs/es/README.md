@@ -1,9 +1,9 @@
 ---
 title: "Visión General"
 description: "Optimiza automáticamente las imágenes utilizadas en los proyectos en Nuxt.js (JPEG, PNG, SVG, WebP y GIF)"
-created: "2019-03-01T13:35:06Z"
-published: "2019-03-01T13:35:06Z"
-modified: "2020-07-15T16:46:04Z"
+createdAt: "2019-03-01T13:35:06Z"
+publishedAt: "2019-03-01T13:35:06Z"
+updatedAt: "2020-07-15T16:46:04Z"
 position: 1
 category: "Primeros Pasos"
 ---

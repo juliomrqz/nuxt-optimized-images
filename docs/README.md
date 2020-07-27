@@ -1,9 +1,9 @@
 ---
 title: "Overview"
 description: "Automatically optimizes images used in Nuxt.js projects (jpeg, png, svg, webp and gif)"
-created: "2019-03-01T13:35:06Z"
-published: "2019-03-01T13:35:06Z"
-modified: "2020-07-15T16:46:04Z"
+createdAt: "2019-03-01T13:35:06Z"
+publishedAt: "2019-03-01T13:35:06Z"
+updatedAt: "2020-07-15T16:46:04Z"
 position: 1
 category: "Getting started"
 ---

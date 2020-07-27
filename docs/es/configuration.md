@@ -1,9 +1,9 @@
 ---
 title: "Configuración"
 description: "Las opciones predeterminadas para estos optimizadores deberían ser suficientes en la mayoría de los casos, pero puede sobrescribir todas las opciones disponibles si lo deseas"
-created: "2019-03-01T13:35:06Z"
-published: "2019-03-01T13:35:06Z"
-modified: "2020-07-15T16:46:04Z"
+createdAt: "2019-03-01T13:35:06Z"
+publishedAt: "2019-03-01T13:35:06Z"
+updatedAt: "2020-07-15T16:46:04Z"
 position: 3
 category: "Primeros Pasos"
 ---

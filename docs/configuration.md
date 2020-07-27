@@ -1,9 +1,9 @@
 ---
 title: "Configuration"
 description: "The default options for these optimizers should be enough in most cases, but you can overwrite every available option if you want to"
-created: "2019-03-01T13:35:06Z"
-published: "2019-03-01T13:35:06Z"
-modified: "2020-07-15T16:46:04Z"
+createdAt: "2019-03-01T13:35:06Z"
+publishedAt: "2019-03-01T13:35:06Z"
+updatedAt: "2020-07-15T16:46:04Z"
 position: 3
 category: "Getting started"
 ---

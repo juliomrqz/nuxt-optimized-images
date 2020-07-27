@@ -1,9 +1,9 @@
 ---
 title: "Contributing"
 description: "Steps for easier development and debugging purposes of Nuxt Optimized Images."
-created: "2019-03-01T18:51:10Z"
-published: "2019-03-01T18:51:10Z"
-modified: "2020-07-15T16:46:04Z"
+createdAt: "2019-03-01T18:51:10Z"
+publishedAt: "2019-03-01T18:51:10Z"
+updatedAt: "2020-07-15T16:46:04Z"
 position: 5
 category: "Getting started"
 ---

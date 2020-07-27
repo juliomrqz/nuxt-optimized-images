@@ -1,9 +1,9 @@
 ---
 title: "Ejemplo"
 description: "Si los valores por defecto son lo suficientemente buenos para tu caso de uso, no tienes que especificarlos para tener un archivo `nuxt.config.js` más corto y limpio."
-created: "2019-03-01T13:35:06Z"
-published: "2019-03-01T13:35:06Z"
-modified: "2020-07-15T16:46:04Z"
+createdAt: "2019-03-01T13:35:06Z"
+publishedAt: "2019-03-01T13:35:06Z"
+updatedAt: "2020-07-15T16:46:04Z"
 position: 4
 category: "Primeros Pasos"
 ---

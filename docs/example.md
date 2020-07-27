@@ -1,9 +1,9 @@
 ---
 title: "Example"
 description: "If the default values are good enough for your use-case, you don't have to specify them to have a shorter and cleaner `nuxt.config.js` file."
-created: "2019-03-01T13:35:06Z"
-published: "2019-03-01T13:35:06Z"
-modified: "2020-07-15T16:46:04Z"
+createdAt: "2019-03-01T13:35:06Z"
+publishedAt: "2019-03-01T13:35:06Z"
+updatedAt: "2020-07-15T16:46:04Z"
 position: 4
 category: "Getting started"
 ---
