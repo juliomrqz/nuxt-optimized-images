@@ -1,3 +1,12 @@
+# [1.2.0](https://github.com/juliomrqz/nuxt-optimized-images/compare/v1.1.0...v1.2.0) (2020-08-18)
+
+
+### Features
+
+* support responsive-loader v2 ([a2cb591](https://github.com/juliomrqz/nuxt-optimized-images/commit/a2cb5912f28c15a6bfe96a11186c414c06ff33e5))
+
+
+
 # [1.1.0](https://github.com/juliomrqz/nuxt-optimized-images/compare/v1.0.1...v1.1.0) (2020-07-19)
 
 * dependencies updates
