@@ -42,6 +42,11 @@ export default {
           original: require("~/assets/images/pexels-photo-707194.png?original"),
           oneSize: require("~/assets/images/pexels-photo-707194.png?resize&size=300"),
           multipleSizes: require("~/assets/images/pexels-photo-707194.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000"),
+        },
+        webp: {
+          original: require("~/assets/images/pexels-photo-707194.png?original&format=webp"),
+          oneSize: require("~/assets/images/pexels-photo-707194.png?resize&size=300&format=webp"),
+          multipleSizes: require("~/assets/images/pexels-photo-707194.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp"),
         }
       };
     }
