@@ -6611,12 +6611,13 @@ responselike@1.0.2:
   dependencies:
     lowercase-keys "^1.0.0"
 
-responsive-loader@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/responsive-loader/-/responsive-loader-1.2.0.tgz#89b98a11d0cb27fe6c17b0831350e1455c14ba31"
-  integrity sha512-ZbeiKySyCMkMLm747DlwvpRS6mk7MiJZiXmOY6KxE5P7d08av3jy2fbEpDDnuxWDruVUePoMzMg9hYGtBWFNxg==
+responsive-loader@2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/responsive-loader/-/responsive-loader-2.0.2.tgz#2321a4ad6076f8d1777818b4d00719995086e7ed"
+  integrity sha512-5SiZLBHBn1EXwtXjVBMzGHYlekz641oAVZb39DB1btuxmrrNDWCroM3+zjw2F1vTix79BqIq6WWlTpuy1ZEd2Q==
   dependencies:
-    loader-utils "^1.1.0"
+    loader-utils "^2.0.0"
+    schema-utils "^2.7.0"
 
 ret@~0.1.10:
   version "0.1.15"
@@ -6708,7 +6709,7 @@ saxes@^5.0.0:
   dependencies:
     xmlchars "^2.2.0"
 
-schema-utils@^2.5.0, schema-utils@^2.6.5:
+schema-utils@^2.5.0, schema-utils@^2.6.5, schema-utils@^2.7.0:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-2.7.0.tgz#17151f76d8eae67fbbf77960c33c676ad9f4efc7"
   integrity sha512-0ilKFI6QQF5nxDZLFn2dMjvc4hjg/Wkg7rHd3jK6/A4a1Hl9VFdQWvgB1UMGoU94pad1P/8N7fMcEnLnSiju8A==
