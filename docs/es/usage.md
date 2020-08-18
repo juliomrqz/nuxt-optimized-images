@@ -3,7 +3,7 @@ title: "Uso"
 description: "Puedes importar o requerir tus imágenes directamente en los componentes de su Vue para su optimización"
 createdAt: "2019-03-01T13:35:06Z"
 publishedAt: "2019-03-01T13:35:06Z"
-updatedAt: "2020-07-15T16:46:04Z"
+updatedAt: "2020-08-18T22:22:53Z"
 position: 2
 category: "Primeros Pasos"
 ---
@@ -282,6 +282,31 @@ Después de la consulta de recursos `?resize`, puedes añadir cualquier otra con
 <script>
 const oneSize = require('~/assets/my-image.jpg?resize&size=300');
 const multipleSizes = require('~/assets/my-image.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000');
+
+export default {
+  data() {
+    return { oneSize, multipleSizes }
+  }
+}
+</script>
+```
+
+Se recomienda usar [sharp](https://github.com/lovell/sharp) si necesitas **generar imágenes webp**:
+
+```vue
+<template>
+  <div>
+    <!-- única imagen -->
+    <img :src="oneSize.src" />
+
+    <!-- juego de orígenes con múltiples tamaños -->
+    <img :srcSet="multipleSizes.srcSet" :src="multipleSizes.src" />
+  </div>
+</template>
+
+<script>
+const oneSize = require('~/assets/my-image.jpg?resize&size=300&format=webp');
+const multipleSizes = require('~/assets/my-image.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 
 export default {
   data() {

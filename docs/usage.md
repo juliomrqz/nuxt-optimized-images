@@ -3,7 +3,7 @@ title: "Usage"
 description: "You can import or require your images directly in your Vue components for optimizations"
 createdAt: "2019-03-01T13:35:06Z"
 publishedAt: "2019-03-01T13:35:06Z"
-updatedAt: "2020-07-15T16:46:04Z"
+updatedAt: "2020-08-18T22:22:53Z"
 position: 2
 category: "Getting started"
 ---
@@ -286,6 +286,31 @@ After the `?resize` resource query, you can add any other query of the [`respons
 <script>
 const oneSize = require('~/assets/my-image.jpg?resize&size=300');
 const multipleSizes = require('~/assets/my-image.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000');
+
+export default {
+  data() {
+    return { oneSize, multipleSizes }
+  }
+}
+</script>
+```
+
+It's recommended to use [sharp](https://github.com/lovell/sharp) if you need to **generate webp images**:
+
+```vue
+<template>
+  <div>
+    <!-- single image -->
+    <img :src="oneSize.src" />
+
+    <!-- source set with multiple sizes -->
+    <img :srcSet="multipleSizes.srcSet" :src="multipleSizes.src" />
+  </div>
+</template>
+
+<script>
+const oneSize = require('~/assets/my-image.jpg?resize&size=300&format=webp');
+const multipleSizes = require('~/assets/my-image.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 
 export default {
   data() {
