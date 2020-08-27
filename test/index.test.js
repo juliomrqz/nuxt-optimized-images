@@ -36,7 +36,7 @@ describe('nuxt-optimized-images', () => {
     const nuxtMockObject = nuxtMock()
     const options = nuxtMockObject.init(nuxtOptimizedImages)
 
-    expect(options.webPackConfig.module.rules).toHaveLength(2)
+    expect(options.webPackConfig.module.rules).toHaveLength(3)
 
     const rule = options.webPackConfig.module.rules[0]
     const webpRule = options.webPackConfig.module.rules[1]
@@ -64,7 +64,7 @@ describe('nuxt-optimized-images', () => {
     const nuxtMockObject = nuxtMock(true, { handleImages: ['jpeg'] })
     const options = nuxtMockObject.init(nuxtOptimizedImages)
 
-    expect(options.webPackConfig.module.rules).toHaveLength(1)
+    expect(options.webPackConfig.module.rules).toHaveLength(2)
 
     const rule = options.webPackConfig.module.rules[0]
 
@@ -88,7 +88,7 @@ describe('nuxt-optimized-images', () => {
     const nuxtMockObject = nuxtMock(false)
     const options = nuxtMockObject.init(nuxtOptimizedImages)
 
-    expect(options.webPackConfig.module.rules).toHaveLength(2)
+    expect(options.webPackConfig.module.rules).toHaveLength(3)
 
     const rule = options.webPackConfig.module.rules[0]
     const webpRule = options.webPackConfig.module.rules[1]

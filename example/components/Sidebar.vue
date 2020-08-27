@@ -19,6 +19,9 @@
       <li>
         <NuxtLink to="/responsive">Responsive</NuxtLink>
       </li>
+      <li>
+        <NuxtLink to="/avif">AVIF (no optimization)</NuxtLink>
+      </li>
     </ul>
   </aside>
 </template>
