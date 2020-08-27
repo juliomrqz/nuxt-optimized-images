@@ -1,12 +1,3 @@
-# [1.3.0](https://github.com/juliomrqz/nuxt-optimized-images/compare/v1.2.0...v1.3.0) (2020-08-27)
-
-
-### Features
-
-* recognize AVIF format as image ([c1bf815](https://github.com/juliomrqz/nuxt-optimized-images/commit/c1bf815964a75f94b128d446cb910dd63a1c3e46))
-
-
-
 # [1.2.0](https://github.com/juliomrqz/nuxt-optimized-images/compare/v1.1.0...v1.2.0) (2020-08-18)
 
 
