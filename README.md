@@ -25,7 +25,7 @@ Image sizes can often get reduced up to 60%, but this is not the only thing `@ac
 * And supports these features already included in Nuxt.js:
   * **Content hash** to the file name so images can get cached on CDN level and in the browser for a long time.
   * **Inlined small images** to save HTTP requests and additional roundtrips.
-  * Same URLs fo unchanged images over multiple builds for long time caching.
+  * Same URLs for unchanged images over multiple builds for long time caching.
 
 
 ## Installation
