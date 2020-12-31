@@ -109,7 +109,7 @@ yarn add --dev imagemin-mozjpeg imagemin-pngquant imagemin-gifsicle imagemin-svg
 
 - 📄 If you want extra details of how to configure and use this project, the **full documentation** is available at [https://marquez.co/docs/nuxt-optimized-images/][docs].
 - 🐞 For **Bug reports** or **Feature requests**, use the [Issues section][issues].
-- 💬 For **questions**, you can also use the [Issues section][issues].
+- 💬 For **questions**, you can also use the [Discussions section][discussions].
 - 🚀 You may also want to **follow me** [on Twitter][twitter].
 
 
@@ -134,6 +134,7 @@ Code released under the [MIT License][license-page].
 [docs-configuration]: https://marquez.co/docs/nuxt-optimized-images/configuration/?utm_source=github&utm_medium=readme&utm_campaign=nuxt-optimized-images
 [docs-configuration-optimizeimagesindev]: https://marquez.co/docs/nuxt-optimized-images/configuration/?utm_source=github&utm_medium=readme&utm_campaign=nuxt-optimized-images#optimizeimagesindev
 [issues]: https://github.com/juliomrqz/nuxt-optimized-images/issues
+[discussions]: https://github.com/juliomrqz/nuxt-optimized-images/discussions
 [twitter]: https://twitter.com/juliomrqz
 [support-page]: https://marquez.co/?utm_source=github&utm_medium=readme&utm_campaign=nuxt-optimized-images
 [code-of-conduct]: https://www.contributor-covenant.org/version/2/0/code_of_conduct/
