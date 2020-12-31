@@ -1,9 +1,9 @@
-name: Test
+name: Build
 
 on: [push]
 
 jobs:
-  test-format-check:
+  generate-example:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -36,8 +36,5 @@ jobs:
       - name: Install node modules
         run: yarn install
 
-      - name: Format check
-        run: yarn run lint
-
-      - name: Test check
-        run: yarn run test
+      - name: Generate Example
+        run: cd example && yarn && yarn generate
