@@ -1,3 +1,18 @@
+# [1.4.0](https://github.com/juliomrqz/nuxt-optimized-images/compare/v1.3.0...v1.4.0) (2021-01-02)
+
+
+### Bug Fixes
+
+* **docs:** fix typo ([#231](https://github.com/juliomrqz/nuxt-optimized-images/issues/231)) ([f6d3091](https://github.com/juliomrqz/nuxt-optimized-images/commit/f6d30919261da6f7b346375212ac85143e84a997))
+
+
+### Features
+
+* **docs:** add reference of AVIF conversion ([9ea549b](https://github.com/juliomrqz/nuxt-optimized-images/commit/9ea549bc8de2cd00087e6882b02d56cc55125a89))
+* **example:** add reference of AVIF conversion ([58ddf4e](https://github.com/juliomrqz/nuxt-optimized-images/commit/58ddf4ec1f098895793aa32d11640f52fe9789fd))
+
+
+
 # [1.3.0](https://github.com/juliomrqz/nuxt-optimized-images/compare/v1.2.0...v1.3.0) (2020-08-27)
 
 
