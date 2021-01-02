@@ -2,6 +2,10 @@
   <section class="container">
     <h1 class="title is-2">AVIF (no optimization)</h1>
 
+    <div class="notification is-warning">
+      AVIF image optimization is not yet supported
+    </div>
+
     <table class="table">
       <thead>
         <tr>

@@ -2,11 +2,15 @@
   <section class="container">
     <h1 class="title is-2">WebP</h1>
 
+    <div class="notification is-warning">
+      AVIF image optimization is not yet supported
+    </div>
+
     <table class="table">
       <thead>
         <tr>
           <th></th>
-          <th>Optimized</th>
+          <th>Original</th>
           <th>Converted to WebP</th>
         </tr>
       </thead>
@@ -42,6 +46,10 @@ export default {
         webp: {
           original: require("~/assets/images/pexels-photo-841303.webp"),
           converted: require("~/assets/images/pexels-photo-841303.webp?webp"),
+        },
+        avif: {
+          original: require("~/assets/images/pexels-photo-707194.avif"),
+          converted: require("~/assets/images/pexels-photo-707194.avif?webp"),
         },
       };
     }

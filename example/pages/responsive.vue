@@ -2,6 +2,10 @@
   <section class="container">
     <h1 class="title is-2">Responsive</h1>
 
+    <div class="notification is-warning">
+      AVIF image optimization is not yet supported
+    </div>
+
     <table class="table">
       <thead>
         <tr>
@@ -44,10 +48,15 @@ export default {
           multipleSizes: require("~/assets/images/pexels-photo-707194.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000"),
         },
         webp: {
-          original: require("~/assets/images/pexels-photo-707194.png?original&format=webp"),
-          oneSize: require("~/assets/images/pexels-photo-707194.png?resize&size=300&format=webp"),
-          multipleSizes: require("~/assets/images/pexels-photo-707194.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp"),
-        }
+          original: require("~/assets/images/pexels-photo-841303.jpg?original"),
+          oneSize: require("~/assets/images/pexels-photo-841303.jpg?resize&size=300&format=webp"),
+          multipleSizes: require("~/assets/images/pexels-photo-841303.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp"),
+        },
+        avif: {
+          original: require("~/assets/images/pexels-photo-707194.png?original"),
+          oneSize: require("~/assets/images/pexels-photo-707194.png?resize&size=300&format=avif"),
+          multipleSizes: require("~/assets/images/pexels-photo-707194.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=avif"),
+        },
       };
     }
   }
