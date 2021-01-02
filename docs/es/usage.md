@@ -3,7 +3,7 @@ title: "Uso"
 description: "Puedes importar o requerir tus imágenes directamente en los componentes de su Vue para su optimización"
 createdAt: "2019-03-01T13:35:06Z"
 publishedAt: "2019-03-01T13:35:06Z"
-updatedAt: "2020-08-18T22:22:53Z"
+updatedAt: "2021-01-02T13:17:49Z"
 position: 2
 category: "Primeros Pasos"
 ---
@@ -291,13 +291,16 @@ export default {
 </script>
 ```
 
-Se recomienda usar [sharp](https://github.com/lovell/sharp) si necesitas **generar imágenes webp**:
+Se recomienda usar [sharp](https://github.com/lovell/sharp) si necesitas **generar imágenes WebP o AVIF**:
 
 ```vue
 <template>
   <div>
-    <!-- única imagen -->
-    <img :src="oneSize.src" />
+    <!-- única imagen WebP -->
+    <img :src="oneSizeWebP.src" />
+
+    <!-- única imagen AVIF -->
+    <img :src="oneSizeAvif.src" />
 
     <!-- juego de orígenes con múltiples tamaños -->
     <img :srcSet="multipleSizes.srcSet" :src="multipleSizes.src" />
@@ -305,12 +308,13 @@ Se recomienda usar [sharp](https://github.com/lovell/sharp) si necesitas **gener
 </template>
 
 <script>
-const oneSize = require('~/assets/my-image.jpg?resize&size=300&format=webp');
+const oneSizeWebP = require('~/assets/my-image.jpg?resize&size=300&format=webp');
+const oneSizeAvif = require('~/assets/my-image.jpg?resize&size=300&format=avif');
 const multipleSizes = require('~/assets/my-image.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 
 export default {
   data() {
-    return { oneSize, multipleSizes }
+    return { oneSizeWebP, oneSizeAvif, multipleSizes }
   }
 }
 </script>
