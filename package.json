@@ -24,7 +24,7 @@
   "dependencies": {
     "consola": "^2.15.3",
     "imagemin": "^7.0.1",
-    "img-loader": "^3.0.2",
+    "img-loader": "^4.0.0",
     "raw-loader": "^4.0.2",
     "url-loader": "^4.1.1"
   },
