@@ -23,7 +23,7 @@
   "homepage": "https://marquez.co/docs/nuxt-optimized-images/?utm_source=npm&utm_medium=readme&utm_campaign=nuxt-optimized-images",
   "dependencies": {
     "consola": "^2.15.3",
-    "imagemin": "^7.0.1",
+    "imagemin": "^8.0.1",
     "img-loader": "^3.0.2",
     "raw-loader": "^4.0.2",
     "url-loader": "^4.1.1"
