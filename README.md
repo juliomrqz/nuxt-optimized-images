@@ -1,9 +1,13 @@
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/db0e010ec71b462b8732b926e5799cc6)](https://www.codacy.com/app/juliomrqz/nuxt-optimized-images?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=juliomrqz/nuxt-optimized-images&amp;utm_campaign=Badge_Grade)
 [![Travis](https://img.shields.io/travis/juliomrqz/nuxt-optimized-images.svg)](https://travis-ci.org/juliomrqz/nuxt-optimized-images)
 [![David](https://img.shields.io/david/peer/juliomrqz/nuxt-optimized-images.svg)](https://david-dm.org/juliomrqz/nuxt-optimized-images?type=peer)
 [![David](https://img.shields.io/david/dev/juliomrqz/nuxt-optimized-images.svg)](https://david-dm.org/juliomrqz/nuxt-optimized-images?type=dev)
 [![version](https://img.shields.io/npm/v/@aceforth/nuxt-optimized-images.svg)](https://www.npmjs.com/package/@aceforth/nuxt-optimized-images)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/juliomrqz/nuxt-optimized-images/develop/LICENSE)
+
+
+> **⚠️ IMPORTANT:** This module is under maintenance mode, that means that new features are not developed but bug fixes are adressed.
+> **ℹ️ NOTE:** For Nuxt v3, it's recommended the Official Nuxt Image Module https://github.com/nuxt/image
+
 
 # :sunrise: :rocket: Nuxt Optimized Images
 
