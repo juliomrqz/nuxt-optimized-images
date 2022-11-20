@@ -2874,10 +2874,10 @@ escodegen@^1.14.1:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-dev@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-dev/-/eslint-config-dev-2.0.0.tgz#82e5ca313449af7b12bbfd4e9733eb286f0f43b7"
-  integrity sha1-guXKMTRJr3sSu/1OlzPrKG8PQ7c=
+eslint-config-dev@3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-dev/-/eslint-config-dev-3.1.0.tgz#60e31f593e7a2a529d106dc639006df9c22cd89f"
+  integrity sha512-CGif5d4X468cfjvxJJq+xZgGIHGUtVbdXJmc5LxCISEF0HJ5SnzpqcsXIUnk2yTCjBJmR/hKYPU7XspFWs4FGQ==
 
 eslint-config-standard@16.0.2:
   version "16.0.2"
