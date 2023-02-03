@@ -26,7 +26,8 @@
     "imagemin": "^7.0.1",
     "img-loader": "^3.0.2",
     "raw-loader": "^4.0.2",
-    "url-loader": "^4.1.1"
+    "url-loader": "^4.1.1",
+    "cache-loader": "TroAlexis/cache-loader#support-added-files"
   },
   "devDependencies": {
     "@commitlint/cli": "16.2.3",
